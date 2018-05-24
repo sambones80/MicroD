@@ -1,0 +1,105 @@
+If Structured Data will not run add to Page Customization Client Settings
+CrawlerBlacklistRegex  BLEXBot|ZumBot|justvisualbot
+CrawlerWhitelistRegex  Googlebot|Mediapartners-Google|AdsBot-Google|bingbot|Slurp|Pingdom|curious-george|AddThis|AdSense|AdWords|msnbot|BingPreview|W3C_Validator|Google-StructuredDataTestingTool|Google-Structured-Data-Testing-Tool|Google-Site-Verification|Google Page Speed Insights|woobot|seotoolset|Screaming|SemrushBot
+
+
+SINGLE STUCTURED DATA
+
+itemprop="logo"
+
+<!-- STRUCTURED DATA -->
+<script type="application/ld+json">
+{ 
+  "@context" : "http://schema.org",
+  "@type" : "FurnitureStore",
+  "name" : "Gavigans Home Furnishings",
+  "telephone" : "410-609-2114",
+  "email": "ghfoffice@ghfhome.com",
+  "openingHours": ["Mo-Sa 8:00-17:00","Su 12:00-17:00"],
+  "url" : "https://express.gaviganshomefurnishings.com",
+  "logo" : "http://ec2b-css.microdinc.com/css/2048/logo.jpg",
+  //"image": "http://vonhemertinteriors.com/costa-mesa-showroom.jpg",
+  //"priceRange": "$$$-$$$$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress" : "700B Evelyn Ave.",
+    "addressLocality" : "Linthicum",
+    "addressRegion" : "MD",
+    "postalCode" : "21090",
+    "addressCountry": "USA"
+  },
+  "sameAs": [
+     "https://www.facebook.com/gaviganshomefurnishings",
+     "https://twitter.com/theroomplace",
+     "https://plus.google.com/+theroomplace",
+     "https://instagram.com/theroomplace/",
+     "https://www.pinterest.com/gavigans/"
+ ],
+ "contactPoint": [{
+ "@type": "ContactPoint",
+ "telephone": "+1-410-609-2114",
+ "contactType": "Sales"
+ }]
+}
+</script>
+<!-- END STRUCTURED DATA -->
+
+
+MULTIPLE STORE STRUCTURED DATA
+
+<!-- STRUCTURED DATA -->
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org", 
+  "@type": "FurnitureStore",
+  "name": "Mountain Comfort Furnishings",
+  //"image": "http://vonhemertinteriors.com/costa-mesa-showroom.jpg",
+  //"priceRange": "$$$-$$$$$",
+  "logo": "http://ec2b-css.microdinc.com/css/20008/logo.jpg",
+  "url": "http://www.mountaincomfort.com",
+  "address" : "1595 Newport Blvd",
+  
+  "telephone": "949-642-2052",
+  "subOrganization":
+  [
+  {
+    "@type": "FurnitureStore",
+    "name": "Mountain Comfort Furnishings",
+    //"image": "http://vonhemertinteriors.com/costa-mesa-showroom.jpg",
+    //"priceRange": "$$$-$$$$$",
+    "branchOf": "Mountain Comfort Furnishings",
+    "telephone": "970-668-3661",
+    "openingHours": ["Mo-Sa 9:30-17:00", "Su 10:00-17:00"],
+    "address":
+    {
+    "@type": "PostalAddress",
+    "streetAddress" : "507 Summit Blvd ",
+    "addressLocality" : "Frisco",
+    "addressRegion" : "CO",
+    "postalCode" : "80443",
+    "addressCountry" : "USA"
+    }
+  },
+  {
+    "@type": "FurnitureStore",
+    "name": "Mountain Comfort Furnishings & Design",
+    //"image": "http://vonhemertinteriors.com/torrance showroom.jpg",
+    //"priceRange": "$$$-$$$$$",
+    "branchOf": "Mountain Comfort Furnishings",
+    "telephone": "530-550-5321",
+    "openingHours": ["Mo Closed","Tu-Sa 9:30-17:30", "Su 10:30-17:00"],
+    "address":
+    {
+    "@type": "PostalAddress",
+    "streetAddress" : "11464 Donner Pass Rd",
+    "addressLocality" : "Truckee",
+    "addressRegion" : "CA",
+    "postalCode" : "96161",
+    "addressCountry" : "USA"
+    }
+  }
+  ]
+}
+</script>
+ 
+<!-- END STRUCTURED DATA -->

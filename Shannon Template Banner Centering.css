@@ -1,0 +1,151 @@
+
+/* ADD class="lowerbanner" TO THE 3 BANNERS AND REMOVE "leftbanner", "middlebanner", "rightbanner" */
+
+.subbanner {
+	position: relative;
+	margin: 10px 0 10px 0;
+}
+
+.subbanner img {
+	width: 100%;
+	height: auto;
+}
+
+.subbanner [class*="staticbox-"]:before {
+	height: 98.5%;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	content: "";
+	transition: opacity 0.35s ease 0s;
+	-webkit-transition: opacity 0.35s ease 0s;
+	-moz-transition: opacity 0.35s ease 0s;
+}
+
+.subbanner [class*="staticbox-"]:hover:before {
+	opacity: 0.5;
+}
+
+.subbanner .subbannerimg:after,
+.subbanner .subbannerimg:before {
+	bottom: 21px;
+	content: "";
+	left: 21px;
+	opacity: 0;
+	position: absolute;
+	right: 21px;
+	top: 21px;
+	transition: opacity 0.15s ease 0s, transform 0.15s ease 0s;
+	-moz-transition: opacity 0.15s ease 0s, transform 0.15s ease 0s;
+	-webkit-transition: opacity 0.15s ease 0s, transform 0.15s ease 0s;
+}
+
+.subbanner .subbannerimg:after {
+	border: 1px solid #fff;
+	transform: scale(1,0);
+	-moz-transform: scale(1,0);
+	-webkit-transform: scale(1,0);
+}
+
+.subbanner [class*="staticbox-"]:hover .subbannerimg:before,
+.subbanner [class*="staticbox-"]:hover .subbannerimg:after {
+	opacity: 1;
+	transform: scale(1);
+	transition: opacity 0.4s ease 0s, transform 0.45s ease 0s;
+	-moz-transform: scale(1);
+	-moz-transition: opacity 0.4s ease 0s, transform 0.45s ease 0s;
+	-webkit-transform: scale(1);
+	-webkit-transition: opacity 0.4s ease 0s, transform 0.45s ease 0s;
+}
+
+.banneroverlay {
+	position: absolute;
+	bottom: 10px;
+	left: 45px;
+	color: #fff;
+	transform: translate3d(0, 40px, 0px);
+	transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
+	-moz-transform: translate3d(0, 40px, 0px);
+	-moz-transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
+	-webkit-transform: translate3d(0, 40px, 0px);
+	-webkit-transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
+	z-index: 4;
+	-webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
+}
+
+.subbanner .lowerbanner {
+	position: absolute;
+	bottom: 35%;
+	left: 50%; /*centering hover buttons*/
+}
+
+.subbanner .lowerbanner .bannerbutton {
+	width: auto; /*centering hover buttons*/
+	transform: translateX(-50%); /*centering hover buttons*/
+}
+
+.subbanner [class*="staticbox-"]:hover .banneroverlay {
+	opacity: 1;
+	transform: translate3d(0px, 0, 0px);
+	-moz-transform: translate3d(0px, 0, 0px);
+	-webkit-transform: translate3d(0px, 0, 0px);
+}
+
+.banneroverlay .banner-top-text {
+	font-family: 'Roboto', sans-serif; 
+	font-size: 22px;
+	font-weight: normal;
+	margin: 5px 0;
+	text-transform: uppercase;
+	text-shadow: 2px 3px 5px #000;
+}
+
+.banneroverlay p {
+	font-family: 'Roboto', sans-serif; 
+	font-size: 16px;
+	text-shadow: 2px 3px 5px #000;
+	margin-bottom: 20px;
+}
+
+.banneroverlay .bannerbutton {
+	width: 35px;
+	color: #fff;
+	font-size: 14px;
+	text-decoration: none;
+	border: 1px solid #fff;
+	padding: 5px 15px;
+	text-transform: uppercase;
+	text-shadow: none;
+	opacity: 0;
+}
+
+.banneroverlay .bannerbutton:hover {
+	background: #fff;
+	color: #000;
+}
+
+.subbanner:hover .banneroverlay .bannerbutton {
+	opacity: 1;
+	transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
+}
+
+.staticbox-black:hover:before {
+	background: #000;
+}
+
+.subbannertitle {
+	text-align: center;
+	margin: 0 0 10px 0;
+}
+
+.subbannertitle p {
+	font-size: 16px;
+	color: #2a2a2a;
+	text-transform: uppercase;
+	padding: 10px 0;
+}

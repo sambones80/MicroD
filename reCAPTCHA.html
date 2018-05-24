@@ -1,0 +1,31 @@
+reCAPTCHA
+
+Google reCAPTCHA
+1 - Request a Google reCaptcha site key and secret key by signing in to our marketing google account then going to the link below and specifying the domain:
+Sign in to our marketing@microdinc.com (carmelcommons114)
+
+Then go to:
+https://www.google.com/recaptcha/admin
+
+2 - Insert the following in the Head Code Snippet area in the "Analytics" section of Website Management:
+<script src='https://www.google.com/recaptcha/api.js'></script>
+
+
+3 - Paste the following DIV tag in the appropriate location where you want the reCAPTCHA prompt and content to appear:
+<div class="g-recaptcha" data-sitekey="PutYourSiteKeyValueHere"></div>
+
+
+4 - Add an attribute called GoogleReCaptchaSecretKey to the ePiphany .inc file SubmitForm tags for the form that you want to require reCAPTCHA. Fill the attribute with the secret key given by Google in step 1. An example is.
+<SubmitForm id="contactus" formname="Contact Us" inputnameprefix="ContactUs_" message="Thank you for submitting this form." GoogleReCaptchaSecretKey="ABC123-SECRETKEYSTRING-XYZ890"></SubmitForm>
+
+
+5 - Click "Save Changes" at the bottom of the ReCAPTCHA setup page.
+
+<style>
+.g-recaptcha {
+	display: block !important;
+    margin-top: 20px !important;
+    text-align: right !important;
+    text-align: -webkit-right !important;
+}
+</style>

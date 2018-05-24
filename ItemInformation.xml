@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<InfoGroupings>
+    <InfoGroup Name="Item Description" Order="1">
+        <InfoItem Type="Comment" Name="Product Description" Order="1" />
+        <InfoItem Type="Comment" Name="Long Description" Order="2" />
+        <InfoItem Type="Comment" Name="Collection Features" Order="3" />
+        <InfoItem Type="Attribute" Name="Country of Origin" Order="4" />
+    </InfoGroup>
+    <InfoGroup Name="Dimensions" Order="2">
+        <InfoItem Type="Attribute" Name="Length" Order="1" />
+        <InfoItem Type="Attribute" Name="Width" Order="2" />
+        <InfoItem Type="Attribute" Name="Depth" Order="3" />
+        <InfoItem Type="Attribute" Name="Height" Order="4" />
+        <InfoItem Type="Attribute" Name="Weight" Order="5" />
+        <InfoItem Type="Attribute" Name="Diameter" Order="6" />
+        <InfoItem Type="Attribute" Name="Volume" Order="7" />
+        <InfoItem Type="Attribute" Name="Arm Height" Order="8" />
+        <InfoItem Type="Attribute" Name="Carton Width" Order="9" />
+        <InfoItem Type="Attribute" Name="Carton Depth" Order="10" />
+        <InfoItem Type="Attribute" Name="Carton Height" Order="11" />
+        <InfoItem Type="Attribute" Name="Carton Volume" Order="12" />
+        <InfoItem Type="Attribute" Name="Carton Weight" Order="13" />
+        <InfoItem Type="Attribute" Name="Footboard Height" Order="14" />
+        <InfoItem Type="Attribute" Name="Headboard Height" Order="15" />
+        <InfoItem Type="Attribute" Name="Carton Length" Order="16" />
+        <InfoItem Type="Attribute" Name="Seat Width" Order="17" />
+        <InfoItem Type="Attribute" Name="Seat Depth" Order="18" />
+        <InfoItem Type="Attribute" Name="Seat Height" Order="19" />
+        <InfoItem Type="Attribute" Name="Inside Width" Order="20" />
+        <InfoItem Type="Attribute" Name="Inside Depth" Order="21" />
+        <InfoItem Type="Attribute" Name="Inside Height" Order="22" />
+        <InfoItem Type="Attribute" Name="Inside Length" Order="23" />
+        <InfoItem Type="Comment" Name="Specifications" Hide="false" Order="24" />
+    </InfoGroup>
+    <InfoGroup Name="Design Elements &amp; Features" Order="3">
+        <InfoItem Type="Attribute" Name="Seat Type" Order="1" />
+        <InfoItem Type="Attribute" Name="Motion Type" Order="2" />
+        <InfoItem Type="Attribute" Name="Material" Order="3" />
+        <InfoItem Type="Attribute" Name="Number of Shelves" Order="4" />
+        <InfoItem Type="Attribute" Name="Number of Drawers" Order="5" />
+        <InfoItem Type="Attribute" Name="Number of Leaves" Order="6" />
+        <InfoItem Type="Attribute" Name="Table Type" Order="7" />
+        <InfoItem Type="Attribute" Name="Style" Order="8" />
+        <InfoItem Type="Attribute" Name="Features" Order="9" />
+        <InfoItem Type="Attribute" Name="Size" Order="10" />
+        <InfoItem Type="Attribute" Name="Finish" Order="11" />
+        <InfoItem Type="Comment" Name="Additional Information" Order="12" />
+        <InfoItem Type="Comment" Name="Feature1" Order="12" />
+        <InfoItem Type="Comment" Name="Feature2" Order="12" />
+        <InfoItem Type="Comment" Name="Feature3" Order="12" />
+        <InfoItem Type="Comment" Name="Material" Order="12" />
+        <InfoItem Type="Comment" Name="Drawer Construction" Order="12" />
+        <InfoItem Type="Comment" Name="Frame Construction" Order="12" />
+        <InfoItem Type="Comment" Name="Finish Construction" Order="12" />
+    </InfoGroup>
+    <InfoGroup Name="Construction &amp; Ergonomics" Order="4">
+        <InfoItem Type="Comment" Name="Construction" Order="1" />
+        <InfoItem Type="Attribute" Name="Fiber Contents" Order="3" />
+    </InfoGroup>
+    <InfoGroup Name="Assembly &amp; Care" Order="5">
+        <InfoItem Type="Comment" Name="Assembly" Order="1" />
+        <InfoItem Type="Comment" Name="Care" Order="2" />
+        <InfoItem Type="Comment" Name="Disclaimer" Order="3" />
+        <InfoItem Type="Comment" Name="Warranty" Order="4" />
+        <InfoItem Type="Comment" Name="Specifications" Order="5" />
+    </InfoGroup>
+    <InfoGroup Name="Other Details" Order="9999" IncludeUnmatchedItems="true">
+    </InfoGroup>
+</InfoGroupings>

@@ -1,0 +1,219 @@
+6.70 Windows load function
+<script>
+$(window).on("load", function() {
+    code
+});
+</script>
+
+text() - Sets or returns the text content of selected elements html() - Sets or returns the content of selected elements (including HTML markup) val() - Sets or returns the value of form fields append() - Inserts content at the end of the selected elements prepend() - Inserts content at the beginning of the selected elements after() - Inserts content after the selected elements before() - Inserts content before the selected elements Hi Guys, everyone have a look at this ticket: https://microdinc.zendesk.com/agent/tickets/21658 On the cart pages, you can add trust seals by creating a file in the xclient root called "shopwithconfidence.html" anything inside of that file will show up on the checkout block, same thing for the faq.html Strike through price if sale price is shown on clearance page.
+<script>
+$('.ProductThumbnailDetails').each(function() {
+    if ($('p.ProductThumbnailParagraphSalePrice').length && window.location.href.toLowerCase().indexOf("specialfilter=true".toLowerCase()) > -1) {
+        $('p.ProductThumbnailParagraphSalePrice').prev('.ProductThumbnailParagraphPrice').css({ 'text-decoration': 'line-through' });
+    }
+});
+</script>
+
+Image not Found
+<img ng-src="/css/mattresslandingpage/images/Brand.jpg" onerror="this.src='http://ecommerces.microdinc.com/css/mattresslandingpage/images/imageNotFound.jpg'" width="120" height="90" alt=""> Scroll to Top of page
+<script>
+$(document).ready(function() {
+    $(window).scrollTop(0);
+});
+</script>
+
+Jump to div on page
+<div id="jumpToTop"></div>
+<a href="#jumpToTop">Jump To Top</a> REFINE YOUR SEARCH
+<script>
+$(document).ready(function() {
+    if ($('.ItemBrowserPageContainer').length) {
+        // Update Baby/Youth to Kids in Refind Your Search filter
+        $(".AttributeFilterListBabyYouth a").text(function() {
+            return $(this).text().replace("Baby/Youth", "Kids");
+        });
+        // Update Baby/Youth to Kids in breadcrumb trail
+        $(".BreadCrumbTrailListBabyYouth a").text("Kids");
+    }
+});
+</script>
+
+Add current date to site
+<script>
+document.write(new Date().getFullYear())
+</script>
+
+Add link to brand on mattress page.
+<script>
+$(window).load(function() {
+    $('#featuredBrandsUL .owl-item a img').each(function() {
+        if ($(this).attr('alt') === "Shifman Mattresses") {
+            $(this).parent('a').attr('href', 'http://shifmanmattresses.com/retailer/gladhill/').attr('target', '_blank');
+        }
+    });
+    if (window.location.href.indexOf("/slone-clearance-center/brand-type.aspx") > -1 || window.location.href.indexOf("brand=slone-clearance-center") > -1) {
+        $('#ItemBrowserCurrentAttribute').append("<br/><p style='color: red; size: 10px'>NOT ALL ITEMS ARE LOCATED IN THE SHOWROOM,<br/>SOME ITEMS ARE AT THE CLEARANCE CENTER LOCATED AT 1650 TIMOCUAN WAY <br/> CLEARANCE CENTER IS OPEN M-F 9:00 am to 4:30 pm");
+    }
+});
+</script>
+
+Change image on the page with id name
+<script>
+$(document).ready(function() {
+    if (window.location.href.toLowerCase().indexOf('/iteminformation.aspx'.toLowerCase()) > -1) {
+        $(".newtitle").attr("src", "/css/1561/images/new_item-s.png");
+    }
+});
+</script>
+
+Change Class
+<script>
+$(document).ready(function() {
+    $('.fa-angle-left').removeClass('fa-angle-left').addClass('fa-chevron-circle-left');
+    $('.fa-angle-right').removeClass('fa-angle-right').addClass('fa-chevron-circle-right');
+});
+</script>
+
+Add CSS changes
+<script>
+$(document).ready(function() {
+    if (window.location.href.toLowerCase().indexOf('/DisplayFlyer.aspx'.toLowerCase()) > -1) {
+        $(".FlyerHeading").css("background-color", "yellow");
+    }
+});
+</script>
+
+<script>
+$(document).ready(function() {
+    if (window.location.href.toLowerCase().indexOf('/DisplayFlyer.aspx'.toLowerCase()) > -1) {
+        $('.FlyerHeading').css({ 'float': 'right', 'width': '20%', 'margin-top': '37px' });
+    }
+});
+</script>
+
+<script>
+$(document).ready(function() {
+    if (window.location.href.toLowerCase().indexOf('/iteminformation.aspx'.toLowerCase()) > -1) {
+        $('.SuggestedItemsHeading').html('Recommended Suggestions');
+    }
+});
+</script>
+
+Change Logo in Header on specific page (img id="brand-logo")
+<script>
+$(document).ready(function() {
+    if (window.location.href.toLowerCase().indexOf('/contract.inc'.toLowerCase()) > -1) {
+        $('#brand-logo').attr('src', '/css/XXXX/images/NEW LOGO.png');
+    }
+});
+</script>
+
+ADD PIXL TO MATTRESS BRAND PAGE. ADD TO MATTRESS.INC PAGE BEFORE THE LAST SCRIPT TAB
+<SCRIPT>
+if (window.location.href.indexOf("/mattress.inc?Brand=Sealy") > -1) {
+    $('body').append("<img style='display:none' src='https:\/\/t.visto1.net\/e?adv=9289&ca=0&acc=86&tag=U5235'>");
+    console.log(true);
+}
+</SCRIPT>
+
+CHANGE URL FOR A PAGE
+<script>
+$(document).ready(function() {
+    if (window.location.href.toLowerCase().indexOf('home%20office&type=bookcases'.toLowerCase()) > -1) {
+        location.replace('/itembrowser.aspx?action=attributes&itemtype=furniture&offset=0&category=all&type=bookcases');
+    }
+});
+</script>> ADD TO LANDING PAGE
+<script>
+$(document).ready(function() {
+    $('.CategorAnchor').each(function() {
+        this.href += 'ADD THIS TEXT';
+    });
+});
+</script>
+
+CHANGE TEXT ON A PAGE
+<script>
+$(document).ready(function() {
+    $('.CategorAnchor').text("test");
+});
+</script>
+
+<script>
+$(document).ready(function() {
+    $(".ItemSummaryDescription p").text(function() {
+        return $(this).text().replace("England's", "Dimensions");
+    });
+});
+</script>
+
+Remove from page
+<script>
+$(document).ready(function() {
+    $("#brandslist li span").each(function() {
+        var toRemove = $("#brandslist li span:contains(Stressless by Ekornes)");
+        $(toRemove).closest("li").remove();
+    });
+});
+</script>
+
+Change Page Title (in browser tab)
+<script>
+if (document.title.indexOf("Restonic® Furniture") > -1) {
+    document.title = "Restonic® Mattresses..."
+};
+</script>
+
+Company Side Nav http://www.hamiltonssofagallery.com/aboutus.inc
+<script type="text/javascript">
+$(document).ready(function() {
+    if (window.location.href.toLowerCase().indexOf('/aboutus.inc'.toLowerCase()) > -1) {
+        $('#aboutus').css({ 'color': '#9b7f2a', 'font-weight': 'bold' });
+        $('.staticpagenavcopy').html('<h3>About Us</h3>');
+    }
+    if (window.location.href.toLowerCase().indexOf('/locations.inc'.toLowerCase()) > -1) {
+        $('#storelocations').css({ 'color': '#9b7f2a', 'font-weight': 'bold' });
+        $('.staticpagenavcopy').html('<h3>Our Furniture Showrooms</h3>');
+    }
+    if (window.location.href.toLowerCase().indexOf('/DisplayFlyer.aspx'.toLowerCase()) > -1) {
+        $('#promotions').css({ 'color': '#9b7f2a', 'font-weight': 'bold' });
+        $('.staticpagenavcopy').html('<h3>Promotions</h3>');
+    }
+    if (window.location.href.toLowerCase().indexOf('/designcenter.inc'.toLowerCase()) > -1) {
+        $('#designcenter').css({ 'color': '#9b7f2a', 'font-weight': 'bold' });
+        $('.staticpagenavcopy').html('<h3>Design Center</h3>');
+    }
+    if (window.location.href.toLowerCase().indexOf('/brands.inc'.toLowerCase()) > -1) {
+        $('#brands').css({ 'color': '#9b7f2a', 'font-weight': 'bold' });
+        $('.staticpagenavcopy').html('<h3>Brands</h3>');
+    }
+    if (window.location.href.toLowerCase().indexOf('/joinemail.inc'.toLowerCase()) > -1) {
+        $('#joinemail').css({ 'color': '#9b7f2a', 'font-weight': 'bold' });
+        $('.staticpagenavcopy').html('<h3>Join Mail</h3>');
+    }
+    if (window.location.href.toLowerCase().indexOf('/contactus.inc'.toLowerCase()) > -1) {
+        $('#contactus').css({ 'color': '#9b7f2a', 'font-weight': 'bold' });
+        $('.staticpagenavcopy').html('<h3>Contact</h3>');
+    }
+    if (window.location.href.toLowerCase().indexOf('/room-planner.inc'.toLowerCase()) > -1) {
+        $('#roomplanner').css({ 'color': '#9b7f2a', 'font-weight': 'bold' });
+        $('.staticpagenavcopy').html('<h3>Room Planner</h3>');
+    }
+});
+</script>
+
+ADD PIXL ONLY TO CERTAIN PAGES
+<script>
+$(document).ready(function() {
+            if ($('.ProductInfoSpanValueCategory').text() === "Mattresses") || window.location.href.toLowerCase().indexOf("/itembrowser.aspx?action=attributes&ItemType=Furniture&Department=Mattresses".toLowerCase()) > -1; {
+                $('body').append("<script type='text/javascript'>window._oiqq = window._oiqq || [];_oiqq.push(['oiq_addPageLifecycle', '9dnt']);_oiqq.push(['oiq_doTag']); (function() { var oiq = document.createElement('script'); oiq.type = 'text\/javascript'; oiq.async = true;oiq.src = document.location.protocol + '\/\/px.owneriq.net\/stas/s\/ltq5xt.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(oiq, s);})();<\/script>");
+            }
+</script>
+
+<script>
+$(document).ready(function() {
+            if ($('.ProductInfoSpanValueCategory').text() === "Mattresses" || window.location.href.toLowerCase().indexOf("/itembrowser.aspx?action=attributes&ItemType=Furniture&Department=Mattresses".toLowerCase()) > -1) {
+                $('body').append("<script type=\"text/javascript\">var rl_siteid = \"cc43d3c1-544d-464a-b39b-38057264c1ab\";
+</script>
+<script src=\ "//cdn.rlets.com/capture_static/mms/mms.js\" async=\ "async\"></script>"); }
+</script>

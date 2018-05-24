@@ -1,0 +1,42 @@
+BUTTON
+
+<div class="joinemail-link">
+	<a href="/joinemail.inc">Join Our Newsletter</a>
+</div>
+
+<style>
+}
+.joinemail-link{
+	width: 100%; 
+	text-align: center;
+	padding: 20px 0px;    
+}
+.joinemail-link a{
+	font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    height: 45px;
+    line-height: 43px;
+    padding: 14px;
+    background-color: #666666;
+    border: 1px solid #666666;
+    cursor: pointer;
+}
+.joinemail-link a:hover{
+	background-color: #D2D2D2;
+	color: #000;
+}
+@media screen and (max-width: 477px) {
+.joinemail-link{
+	text-align: center;    
+}
+}
+
+</style>
+
+<div id="findastore">
+	<a class="btn btn-default" href="#" data-featherlight="#stores" onClick="ga('set', 'nonInteraction', true);ga('send', 'event', { eventCategory: 'Location', eventAction: 'Clicked', eventValue: 1});">Find a Store</a>
+</div>
+

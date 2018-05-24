@@ -1,0 +1,99 @@
+/scripts/layout.js
+
+ADD THIS CODE TO THE HEAD CODE SNIPPET
+
+<script src="/css/XXXX/scripts/layout.js"></script>
+                
+<!--ADD DYNAMICALLY TO LAYOUT.JS-->
+
+Header
+<AttributeList id="LivingRoom" ListAttribute="Type" FilterAttribute="Room"  FilterAttributeValue="Living Room" ItemType="item" />
+Categorynav.inc
+<AttributeList id="LivingRoom2" ListAttribute="Type" FilterAttribute="Room"  FilterAttributeValue="Living Room" ItemType="item" />
+Livingroom.inc
+<AttributeList id="LivingRoom3" class="CategoryImage" ListAttribute="Type" FilterAttribute="Room" FilterAttributeValue="Living Room" ItemType="item" Thumbnail="Yes" SEOContent="Yes" OmniVue="Yes" />
+
+<a href="/outdoor.inc">Outdoor</a>
+<AttributeList ListAttribute="Type" FilterAttribute="Department" FilterAttributeValue="Outdoor Furniture" ItemType="item" />
+
+
+Header, categorynav, landing page
+<script type="text/javascript">
+$(document).ready(function() {
+    attributeFunctions({
+        abc: false,
+        attributeClass: ['#LivingRoom', '#LivingRoom2', '#LivingRoom3'],
+        attributesToRemove: ['Accessories', 'Benches'],
+        attributesChangeLink: {
+            "Bars": 'http://www.lexington.com',
+            "Chairs": 'http://www.lexington.com',
+        },
+        attributesChangeImage: { "Lexington": 'https://ec2e-secure.microdinc.com/css/default/images/microd.jpg' },
+        appendNewName: addAttributeArray = [
+            { attributeName: 'One Night Stands', attributeURL: "mybrand.com", attributeImageURL: 'https://ec2b-secure.microdinc.com/css/default/images/omnivue/bars.jpg' },
+            { attributeName: 'One Night Stands', attributeURL: "mybrand.com", attributeImageURL: 'https://ec2b-secure.microdinc.com/css/default/images/omnivue/bars.jpg' }
+        ],
+        attributesToTop: ['Tables'],
+        attributeNewWindow: ['LG']
+    });
+});
+</script>
+
+
+Footer Brands
+<attributelist id="FooterBrands" listattribute="Brand" itemtype="item" />
+
+Brands.inc
+<AttributeList id="Brand" class="BrandLogos" ListAttribute="Brand" ItemType="item" Thumbnail="Yes" />             
+
+Footer Brands
+<div id="brandslistbox">
+
+<script type="text/javascript">
+$(document).ready(function() {
+    attributeFunctions({
+        abc: true,
+        attributeClass: ['#FooterBrands', '#Brand'],
+        attributesToRemove: ['A America', 'England'],
+        attributesChangeLink: {
+            "Bradington-Young": '/bradington_young/brand-type.aspx',
+            "Hooker Furniture": '/hooker-furniture/brand-type.aspx',
+            "Sam Moore": '/sam-moore/brand-type.aspx'
+        },
+        attributesChangeImage: { "Lexington": 'https://ec2e-secure.microdinc.com/css/default/images/microd.jpg' },
+        appendNewName: addAttributeArray = [
+            { attributeName: 'My Furniture', attributeURL: 'mybrand.com', attributeImageURL: 'https://ec2b-secure.microdinc.com/css/default/images/omnivue/bars.jpg' },
+            { attributeName: 'My Brand', attributeURL: 'mybrand2.com', attributeImageURL: 'https://ec2b-secure.microdinc.com/css/default/images/omnivue/bars.jpg' },
+            { attributeName: 'My Custom Brand Again', attributeURL: 'http://www.mybrand.com', attributeImageURL: 'https://ec2e-secure.microdinc.com/css/default/images/omnivue/bars.jpg' }
+        ],
+        attributesToTop: ['Klaussner', 'Millennium'],
+        attributeNewWindow: ['LG']
+    });
+});
+</script>
+
+                
+Combines 2 Dynamic Tags
+<li id="append-combined-Entertainment"><a href="/Entertainment.inc">Entertainment</a>
+
+<!-- Script to combine 2 dynamic tags here -->
+<script>
+var combine_lists = "";
+$("#combine-lists #HomeEntertainment li").each(function(index) {
+    combine_lists = combine_lists + "<li>" + $(this).html() + "</li>";
+});
+
+combine_lists = combine_lists + "<li><strong class='heading'>Bar &amp; Game Room</strong></li>";
+
+$("#combine-lists #BarGameRoom li").each(function(index) {
+    combine_lists = combine_lists + "<li>" + $(this).html() + "</li>";
+});
+
+var combined_list = '<ul class="shopbycolor">' + combine_lists + '</ul>';
+// console.log(combined_list);
+$('#append-combined-Entertainment').append(combined_list);
+</script>
+
+</li>
+
+                

@@ -1,0 +1,47 @@
+Searchbox Flexbox:
+
+#searchbox {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 94%;
+    height: 28px;
+    border: 1px solid #fff;
+    margin-top: 25px;
+}
+
+#searchboxleft {
+    flex: 6;
+}
+
+#searchboxleft input {
+    width: 96%;
+    width: -webkit-fill-available;
+    height: 14px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 11px;
+    color: #929292;
+    background-color: #FFF;
+    padding: 9px 3px 3px 6px;
+    border: 1px solid #FFF;
+}
+
+#searchboxright {
+    flex: 1;
+}
+
+#searchboxright a {
+    display: block;
+    height: 28px;
+    line-height: 28px;
+    background-color: #FFF;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #2a2a2a;
+    text-align: center;
+    text-decoration: none;
+}
+
+#searchboxright a:hover {
+    color: #ababab;
+}

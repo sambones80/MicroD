@@ -1,0 +1,58 @@
+<div class="grid-container">
+	<div class="grid-100">
+        <div class="pageheading">
+            <div class="pageheadingcopy">
+                <h2>Contact Information</h2>
+            </div>
+        </div>
+        <div class="requiredfields">
+            <p>* Required Fields </p>
+        </div>
+        <div class="contactform">
+            <SubmitForm id="formID" formname="FormName" inputnameprefix="FormName_" message="Thank you for submitting this form." emailto="XXX@xxx.com"></SubmitForm>
+            <div class="grid-100 tablet-grid-100 mobile-grid-100">
+
+                <div class="grid-15 tablet-grid-15 grid-parent">
+                    <p><label for="firstname">First Name:*</label></p>
+                </div>
+                <div class="grid-35 tablet-grid-35 grid-parent">
+                    <input class="validate[required,length[0,100]]" id="firstname" name="FormName_FirstName" tabindex="1" type="text" value="">
+                </div>
+
+                <div class="grid-15 tablet-grid-15 grid-parent">
+                    <p><label for="lastname">Last Name:*</label></p>
+                </div>
+                <div class="grid-35 tablet-grid-35 grid-parent">
+                    <input class="validate[required,length[0,100]]" id="lastname" name="FormName_LastName" tabindex="2" type="text" value="">
+                </div>
+                <div class="clear"></div>
+
+                <div class="grid-15 tablet-grid-15 grid-parent">
+                    <p><label for="phone">Phone #:*</label></p>
+                </div>
+                <div class="grid-35 tablet-grid-35 grid-parent">
+                    <input class="validate[required,length[0,100]]" id="phone" name="FormName_Phone" tabindex="3" type="text" value="">
+                </div>
+
+                <div class="grid-15 tablet-grid-15 grid-parent">
+                    <p><label for="email">Email:*</label></p>
+                </div>
+                <div class="grid-35 tablet-grid-35 grid-parent">
+                    <input class="validate[required,custom[email],length[0,100]]" id="email" name="FormName_Email" tabindex="4" type="text" value="">
+                </div>
+                <div class="clear"></div>
+
+                <div class="grid-15 tablet-grid-15 grid-parent">
+                    <p><label for="message">Text Area:*</label></p>
+                </div>
+                <div class="addinfoform grid-85 tablet-grid-85 grid-parent">
+                    <textarea id="message" name="FormName_CommentBox" tabindex="5" style="width: 96%;"></textarea>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div id="submitcontactform">
+            <input name="FormName_submit" type="submit" value="SEND">
+        </div>
+    </div>
+</div>

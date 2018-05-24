@@ -1,0 +1,192 @@
+Owl Carousel
+
+<div class="grid-100">
+	<div class="containerbox">
+		<div id="Department" class="owl-carousel">
+			<a href="/livingroom.inc"><img src="/css/20056/images/livingroombanner.jpg" alt="Living Room" class="img-responsive" width="275" height="313" /></a>
+			
+			<a href="/diningroom.inc"><img src="/css/20056/images/dinningroombanner.jpg" alt="Living Room" class="img-responsive" width="275" height="313" /></a>
+			
+			<a href="/bedroom.inc"><img src="/css/20056/images/bedroombanner.jpg" alt="Living Room" class="img-responsive" width="275" height="313" /></a>
+			
+			<a href="/entertainment.inc"><img src="/css/20056/images/entertainmentbanner.jpg" alt="Living Room" class="img-responsive" width="275" height="313" /></a>
+			
+			<a href="/homeoffice.inc"><img src="/css/20056/images/homeofficebanner.jpg" alt="Living Room" class="img-responsive" width="275" height="313" /></a>
+			
+			<a href="/accessories.inc"><img src="/css/20056/images/accessoriesbanner.jpg" alt="Living Room" class="img-responsive" width="275" height="313" /></a>
+				
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+
+
+Owl Carousel for Attribute List
+
+<div class="hide-on-desktop hide-on-tablet mobile-grid-100">
+	<div class="containerbox">
+		<div id="brand-slider">
+			<AttributeList id="Brandslide" class="owl-carousel" ListAttribute="Brand" ItemType="item" Thumbnail="Yes" />
+			<div class="clear"></div>
+		</div> 
+	</div>
+</div>
+
+
+Owl Carousel for Product Attribute List
+
+<div class="grid-100">
+	<div class="containerbox" style="text-align: center;">
+		<ItemList id="Onsale" class="owl-carousel"  FilterAttribute="SKUStatus" FilterAttributeValue="Closeout" ItemType="item" ColumnCount="15" MaxRows="1" Thumbnail="Yes" ThumbnailWidth="200" />
+	<div class="clear"></div>
+	</div>
+</div>
+
+<style>
+/*Mobile Brand Slider*/
+#brand-slider{
+	text-align: center;
+}
+#brand-slider li {
+    width: 138px;
+    height: 130px;
+    list-style: none;
+    text-align: center;
+    float: left;
+}
+#brand-slider a {
+    font-size: 14px;
+    color: #2a2a2a;
+    text-decoration: none;
+}
+#brand-slider span {
+    display: none;
+}
+</style>
+
+Place script on botom of page
+
+<script>
+$(document).ready(function(){
+
+	$("#Department, #Onsale, #Brandslide").owlCarousel({
+		margin: 10,
+		autoplay: true,
+		lazyLoad: true,
+		loop: true,
+		nav : true,
+		navText: ["<i class=\"fa fa-chevron-left fa-2x\" aria-hidden=\"true\"></i>","<i class=\"fa fa-chevron-right fa-2x\" aria-hidden=\"true\"></i>"],
+		dots: false,
+		responsive:{
+		    0:{
+		        items:2
+		    },
+		    600:{
+		        items:4
+		    },
+		    1000:{
+		        items:5
+		    }
+		}
+	});
+
+});
+
+</script>
+
+--- OWL CAROUSEL LIGHTBOX ---
+(Large single image slideshow on top with smaller slider beneth to select image from)
+
+Gormans > Get Inspired
+www.gormans.com/getinspired.inc
+www.gormans.com/livingroominspiration.inc
+
+
+_____________________________________________________________________________________
+OLD Owl Carousel
+
+OLD Brand Slider
+<div class="grid-100">
+	<p class="h3">Brands We Carry</p>
+	<div id="brandslider-container">
+		<div id="brand-slider" class="owl-carousel">
+			<div>
+				<a href="#"><img src="/css/XXXX/images/logo.jpg" /></a>
+			</div>
+			<div>
+				<a href="#"><img src="/css/XXXX/images/logo.jpg" /></a>
+			</div>
+			<div>
+				<a href="#"><img src="/css/XXXX/images/logo.jpg" /></a>
+			</div>
+			<div>
+				<a href="#"><img src="/css/XXXX/images/logo.jpg" /></a>
+			</div>
+			<div>
+				<a href="#"><img src="/css/XXXX/images/logo.jpg" /></a>
+			</div>
+			<div>
+				<a href="#"><img src="/css/XXXX/images/logo.jpg" /></a>
+			</div>
+			<div>
+				<a href="#"><img src="/css/XXXX/images/logo.jpg" /></a>
+			</div>
+			<div>
+				<a href="#"><img src="/css/XXXX/images/logo.jpg" /></a>
+			</div>
+			<div>
+				<a href="#"><img src="/css/XXXX/images/logo.jpg" /></a>
+			</div>
+			<div>
+				<a href="#"><img src="/css/XXXX/images/logo.jpg" /></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+ <script>
+	$(document).ready(function() {
+	    $("#brand-slider").owlCarousel({
+	        lazyLoad : true,
+	        pagination : false,
+	        navigation : true,
+	        navigationText : ["<i class=\"fa fa-2x fa-chevron-left\" aria-hidden=\"true\"></i>", "<i class=\"fa fa-2x fa-chevron-right\" aria-hidden=\"true\"></i>"],
+	        items : 7,
+	        itemsDesktop : [1039,6],
+	        itemsDesktopSmall : [799,5],
+	        itemsTablet : [599,4],
+	        itemsTabletSmall : [399,3],
+	        itemsMobile : [269,2],
+	        responsiveBaseWidth : "#brand-slider" //Bases the width off brand-slider div
+	    });
+	});
+</script>
+_____________________________________________________________________________________
+
+<script>
+$("#homebannerslides").owlCarousel({
+    autoPlay : 3000,
+    stopOnHover : true,
+    navigation: true,
+    navigationText: [
+      "<i class='icon-chevron-left icon-white'><</i>",
+      "<i class='icon-chevron-right icon-white'>></i>"
+      ],
+    paginationSpeed : 1000,
+    goToFirstSpeed : 2000,
+    singleItem : true,
+    autoHeight : true,
+    transitionStyle:"fade"
+  });
+</script>
+ 
+<script>
+//BRANDS SCROLL//
+  $("#brandslist").easySlider({
+  numberofitems: '7',
+  auto: true,
+  pause: 6000,
+  speed: 800,
+  continuous: true
+  });
+ </script>

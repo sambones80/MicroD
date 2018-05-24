@@ -1,0 +1,332 @@
+Footer Form
+<div id="footerbarleft">
+    <div id="newsletterbox">
+        <div id="newsletterboxleft">
+            <SubmitForm id="emailsignup" formname="Email Sign Up" inputnameprefix="EmailSignup_" message="Thank you for signing up."></SubmitForm>
+            <label class="hidden" for="SignUpEmailAddress">Email Address</label>
+            <input class="validate[required,custom[email],length[0,100]]" type="text" id="SignUpEmailAddress" name="EmailSignup_EmailAddress" placeholder="Enter your email address" value="" />
+        </div>
+        <div id="newsletterboxright">
+            <input name="EmailSignup_submit" type="image" src="/css/688/images/emailbutton.jpg" alt="Submit" />
+        </div>
+    </div>
+</div>
+
+CONTACT US FORM
+
+Contact-Conversion 6.70
+
+<script type="text/javascript">
+    $(window).on("load", function(){
+        window.location = "/thank-you.inc";
+    });
+</script>
+
+Contact-Conversion 6.65
+
+<script type="text/javascript">
+    $(window).load(function(){
+    window.location = "/thank-you.inc";
+    });
+</script>
+
+
+E-Mail form options from
+from http://www.kodyaz.com/articles/mailto-syntax-with-samples.aspx
+
+Single
+<SubmitForm emailto="developer@kodyaz.com"></SubmitForm>
+
+Single with Subject
+<SubmitForm emailto="developer1@kodyaz.com&subject=Mail To Syntax with Samples"></SubmitForm>
+or for MAC's
+<SubmitForm emailto="developer1@kodyaz.com?subject=Mail To Syntax with Samples"></SubmitForm>
+
+Single wih Subject and Body
+<SubmitForm emailto="developer1@kodyaz.com?subject=Mail To Syntax with Samples&body=Hi, in this article you will find samples about how to use MailTo in HTML"></SubmitForm>
+
+Multiple
+<SubmitForm emailto="developer1@kodyaz.com;developer2@kodyaz.com"></SubmitForm>
+
+Multiple with CC
+<SubmitForm emailto="developer1@kodyaz.com;developer2@kodyaz.com&cc=developer3@eralper.com"></SubmitForm>
+
+Multiple with CC and BCC
+<SubmitForm emailto="developer1@kodyaz.com;developer2@kodyaz.com&cc=developer3@eralper.com&bcc=developer4@eralper.com"></SubmitForm>
+
+
+Check form after resetting the cache and in incognito mode.
+<!-- Contact Us -->
+
+    <div class="grid-container">
+        <div class="grid-100">
+            <div id="pagetitle">
+                <h1>Contact Us</h1>
+            </div>
+        </div>
+        <div class="grid-25 tablet-grid-25">
+            <div id="rccontact">
+                <h1>Hudsonville</h1><iframe frameborder="0" height="180" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d23394.490854497413!2d-85.871329!3d42.866272!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x14842b7bc5384c2b!2sTalsma+Furniture+Hudsonville!5e0!3m2!1sen!2sus!4v1427822344368"
+                style="border:0" width="200"></iframe>
+                <p>3620 Chicago Dr</p>
+                <p>Hudsonville, MI 49426</p>
+                <p>Phone: 616-669-1030</p>
+                <p>Fax: 616-669-1650</p><br>
+                <p id="Holland">Email: <a href="mailto:contact.hudsonville@talsmafurniture.com">contact.hudsonville@talsmafurniture.com</a></p>
+                <p><u><strong>Hours/Days of Operation</strong></u></p>
+                <p><strong>Monday - Friday:</strong> 9am - 8pm</p>
+                <p><strong>Saturday:</strong> 9am - 5:30pm</p>
+                <p><strong>Sunday:</strong> Closed</p>
+                
+            </div>
+        </div>
+        <div class="grid-75 tablet-grid-75">
+            <div class="pageheading">
+                <div class="pageheadingcopy">
+                    <h2>Contact Information</h2>
+                </div>
+            </div>
+            <div class="requiredfields">
+                <p>* Required Fields </p>
+            </div>
+            <div class="contactform">
+
+            <!--TO EMAIL OUT AND OPEN A THANK YOU PAGE-->
+            <!--<SubmitForm id="contactus" formname="Design Services" inputnameprefix="ContactUs_" message="Thank you for submitting this form." ResponseTemplate="contact-conversion.inc" emailtemplate="designservicesemail.inc" emailsubject="In Home Design Service Inquiry" emailto="DDIETER@WALKERFURNITURE.COM, jweed@walkerfurniture.com" emailfrom="jweed@walkerfurniture.com"></SubmitForm>-->
+
+            <!--NEW INC PAGE TO TELL WHAT PAEG TO OPEN WHEN SUBMITTED-->
+            <!--EXAMPLE contact-conversion.inc page-->
+            <!--<script type="text/javascript">
+                $(window).load(function(){
+                window.location = "/contact-thank-you.inc";
+                });
+                </script>-->
+
+
+                <SubmitForm id="contactus" formname="Contact Us" inputnameprefix="ContactUs_" message="Thank you for submitting this form." emailto="abc@furniturestore.com"></SubmitForm>
+                <div class="grid-100 tablet-grid-100 mobile-grid-100">
+                    <div class="grid-50 tablet-grid-50">
+                        <div class="grid-40 tablet-grid-40 grid-parent">
+                            <p><label for="firstname">First Name:*</label></p>
+                        </div>
+                        <div class="grid-60 tablet-grid-60 grid-parent">
+                            <input class="validate[required,length[0,100]]" id="firstname" name="ContactUs_FirstName" tabindex="1" type="text" value="">
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="grid-50 tablet-grid-50">
+                        <div class="grid-40 tablet-grid-40 grid-parent">
+                            <p><label for="lastname">Last Name:*</label></p>
+                        </div>
+                        <div class="grid-60 tablet-grid-60 grid-parent">
+                            <input class="validate[required,length[0,100]]" id="lastname" name="ContactUs_LastName" tabindex="2" type="text" value="">
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="grid-50 tablet-grid-50">
+                        <div class="grid-40 tablet-grid-40 grid-parent">
+                            <p><label for="address">Address:*</label></p>
+                        </div>
+                        <div class="grid-60 tablet-grid-60 grid-parent">
+                            <input class="validate[required,length[0,100]]" id="address" name="ContactUs_Address" tabindex="3" type="text" value="">
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="grid-50 tablet-grid-50">
+                        <div class="grid-40 tablet-grid-40 grid-parent">
+                            <p><label for="address2">Address 2:</label></p>
+                        </div>
+                        <div class="grid-60 tablet-grid-60 grid-parent">
+                            <input id="address2" name="ContactUs_Address2" tabindex="4" type="text" value="">
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="grid-50 tablet-grid-50">
+                        <div class="grid-40 tablet-grid-40 grid-parent">
+                            <p><label for="city">City:*</label></p>
+                        </div>
+                        <div class="grid-60 tablet-grid-60 grid-parent">
+                            <input class="validate[required,length[0,100]]" id="city" name="ContactUs_City" tabindex="5" type="text" value="">
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="grid-50 tablet-grid-50">
+                        <div class="grid-40 tablet-grid-40 grid-parent">
+                            <p><label for="state">*State:</label></p>
+                        </div>
+                        <div class="grid-60 tablet-grid-60 grid-parent">
+                            <select class="validate[required]" id="state" name="ContactUs_State" tabindex="6">
+                                <option selected value="">State</option>
+                                <option value="AL">Alabama</option>
+                                <option value="AK">Alaska</option>
+                                <option value="AZ">Arizona</option>
+                                <option value="AR">Arkansas</option>
+                                <option value="CA">California</option>
+                                <option value="CO">Colorado</option>
+                                <option value="CT">Connecticut</option>
+                                <option value="DE">Delaware</option>
+                                <option value="DC">Dist of Columbia</option>
+                                <option value="FL">Florida</option>
+                                <option value="GA">Georgia</option>
+                                <option value="HI">Hawaii</option>
+                                <option value="ID">Idaho</option>
+                                <option value="IL">Illinois</option>
+                                <option value="IN">Indiana</option>
+                                <option value="IA">Iowa</option>
+                                <option value="KS">Kansas</option>
+                                <option value="KY">Kentucky</option>
+                                <option value="LA">Louisiana</option>
+                                <option value="ME">Maine</option>
+                                <option value="MD">Maryland</option>
+                                <option value="MA">Massachusetts</option>
+                                <option value="MI">Michigan</option>
+                                <option value="MN">Minnesota</option>
+                                <option value="MS">Mississippi</option>
+                                <option value="MO">Missouri</option>
+                                <option value="MT">Montana</option>
+                                <option value="NE">Nebraska</option>
+                                <option value="NV">Nevada</option>
+                                <option value="NH">New Hampshire</option>
+                                <option value="NJ">New Jersey</option>
+                                <option value="NM">New Mexico</option>
+                                <option value="NY">New York</option>
+                                <option value="NC">North Carolina</option>
+                                <option value="ND">North Dakota</option>
+                                <option value="OH">Ohio</option>
+                                <option value="OK">Oklahoma</option>
+                                <option value="OR">Oregon</option>
+                                <option value="PA">Pennsylvania</option>
+                                <option value="RI">Rhode Island</option>
+                                <option value="SC">South Carolina</option>
+                                <option value="SD">South Dakota</option>
+                                <option value="TN">Tennessee</option>
+                                <option value="TX">Texas</option>
+                                <option value="UT">Utah</option>
+                                <option value="VT">Vermont</option>
+                                <option value="VA">Virginia</option>
+                                <option value="WA">Washington</option>
+                                <option value="WV">West Virginia</option>
+                                <option value="WI">Wisconsin</option>
+                                <option value="WY">Wyoming</option>
+                            </select>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="grid-50 tablet-grid-50">
+                        <div class="grid-40 tablet-grid-40 grid-parent">
+                            <p><label for="postalcode">Postal
+                            Code:*</label></p>
+                        </div>
+                        <div class="grid-60 tablet-grid-60 grid-parent">
+                            <input class="validate[required,length[0,100]]" id="postalcode" name="ContactUs_PostalCode" tabindex="7" type="text" value="">
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="grid-50 tablet-grid-50">
+                        <div class="grid-40 tablet-grid-40 grid-parent">
+                            <p><label for="country">Country:</label></p>
+                        </div>
+                        <div class="grid-60 tablet-grid-60 grid-parent">
+                            <input id="country" name="ContactUs_Country" tabindex="8" type="text" value="">
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="grid-50 tablet-grid-50">
+                        <div class="grid-40 tablet-grid-40 grid-parent">
+                            <p><label for="phone">Phone #:*</label></p>
+                        </div>
+                        <div class="grid-60 tablet-grid-60 grid-parent">
+                            <input class="validate[required,length[0,100]]" id="phone" name="ContactUs_Phone" tabindex="9" type="text" value="">
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="grid-50 tablet-grid-50">
+                        <div class="grid-40 tablet-grid-40 grid-parent">
+                            <p><label for="email">Email:*</label></p>
+                        </div>
+                        <div class="grid-60 tablet-grid-60 grid-parent">
+                            <input class="validate[required,custom[email],length[0,100]]" id="email" name="ContactUs_Email" tabindex="10" type="text" value="">
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="pageheading">
+                <div class="pageheadingcopy">
+                    <h1>Additional Information</h1>
+                </div>
+            </div>
+            <div class="addinfoform">
+                <div class="grid-100 tablet-grid-100 mobile-grid-100">
+                    <div class="grid-100">
+                        <p><label for="howdidyouhear">How did you hear about us?</label></p>
+                        <select id="howdidyouhear" name="ContactUs_HowDidYouHear" tabindex="11">
+                            <option selected value="">Please choose one</option>
+                            <option value="friend">Friend</option>
+                            <option value="link">Link</option>
+                            <option value="web search">Web Search</option>
+                            <option value="magazine ad">Magazine Ad</option>
+                            <option value="tv commercial">TV Commercial</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <p><label for="purchasenewfurniture">Do you plan to purchase new furniture within:</label></p><select id="purchasenewfurniture" name=     "ContactUs_PurchaseNewFurniture" tabindex="12">
+                            <option selected value="">Please choose one</option>
+                            <option value="30 days">30 days</option>
+                            <option value="60 days">60 days</option>
+                            <option value="90 days">90 days</option>
+                        </select>
+                        <p><label for="plantopurchase">What do you plan to purchase?</label></p>
+                        <select class="selectwidth" id="plantopurchase" multiple name="ContactUs_PlanToPurchase" tabindex="13">
+                            <option value="Please choose one or more">Please choose one or more</option>
+                            <option value="Bedroom">Bedroom</option>
+                            <option value="Dining">Dining</option>
+                            <option value="Living/Family Room">Living/Family Room</option>
+                            <option value="Entertainment or Wall Unit">Entertainment or Wall Unit</option>
+                        </select>
+                        <p><label for="magazinesyouread">Which magazines do you regularly read?</label></p><select class="selectwidth" id="magazinesyouread" multiple name="ContactUs_MagazinesYouRead" tabindex="14">
+                            <option value="Select Magazine(s)">Select Magazine(s)</option>
+                            <option value="Architectural Digest">Architectural Digest</option>
+                            <option value="Better Homes &amp; Gardens">Better Homes &amp; Gardens</option>
+                            <option value="Country Home">Country Home</option>
+                            <option value="Country Living">Country Living</option>
+                        </select>
+                        <p><label for="yourgender">Your Gender:</label></p>
+                        <select id="yourgender" name="ContactUs_YourGender" tabindex="15">
+                            <option selected value="">Please select</option>
+                            <option value="">Male</option>
+                            <option value="">Female</option>
+                        </select>
+                        <p><label for="yourage">Your Age:</label></p><select id="yourage" name="ContactUs_YourAge" tabindex="16">
+                            <option selected value="">Please choose one</option>
+                            <option value="&lt; 20">&lt; 20</option>
+                            <option value="&lt; 30">&lt; 30</option>
+                            <option value="&lt; 40">&lt; 40</option>
+                            <option value="&lt; 50">&lt; 50</option>
+                            <option value="&lt; 60">&lt; 60</option>
+                            <option value="&lt; 70">&lt; 70</option>
+                            <option value="&lt; 80">&lt; 80</option>
+                            <option value="&lt; 90">&lt; 90</option>
+                            <option value="&lt; 100">&lt; 100</option>
+                        </select>
+                        <p><label for="commentbox">Please indicate how we can be of service:</label></p>
+                        <textarea id="commentbox" name="ContactUs_CommentBox" tabindex="17"></textarea><br>
+                        <p><input checked class="addinfocheckbox" id="signup" name="ContactUs_SignUp" type="checkbox"><label for="signup">Sign-up for exclusive email offers and promotions.</label></p>
+                        <p><span class="addinfosmalltext">We are committed to protecting your privacy. We will never share or sell your information to any third party. By checking this box, you are verifying that you would like to receive
+                        promotional emails from us.</span></p>
+                    </div>
+                </div>
+            </div>
+            <div id="submitcontactform">
+                <input name="ContactUs_submit" type="submit" value="SEND">
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div><!-- End Contact Us -->
+</body>
+</html>
+

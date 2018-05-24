@@ -1,0 +1,107 @@
+YouTube Parameters
+
+YouTube Responsive
+<div id="video">
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/XXXX?rel=0&amp;modestbranding=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+
+Loop video by adding itself to playlist and loop=1
+<div id="video">
+	<iframe src="https://www.youtube.com/embed/XXXX?rel=0&amp;modestbranding=1&amp;loop=1&amp;playlist=XXXX" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+
+Parameters:
+autoplay=1
+controls=0
+modestbranding=1   (removes YouTube logo)
+rel=0   		   (doesn't show related videos at end)
+showinfo=0   	   (removes title/info)
+start=#   		   (seconds from beginning to start playing)
+end=#   		   (seconds from beginning to stop playing)
+
+% Based Styling - No Bars/no video border
+<style>
+#video {
+	position: relative;
+	padding: 6% 0 50%;
+	height: 0;
+}
+
+#video iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+</style>
+
+Original 16:9 Styling
+<style>
+#video {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+
+#video iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+</style>
+
+Mute Video
+<script>
+var myVideo =  iframe.getElementById('myVideo'); 
+myVideo.mute();
+</script>
+
+
+autoplay
+Supported players	HTML5, AS3
+Description	This parameter specifies whether the initial video will automatically start to play when the player loads. Supported values are 0 or 1. The default value is 0.
+
+controls
+Supported players	HTML5, AS3
+Description	This parameter indicates whether the video player controls are displayed. For IFrame embeds that load a Flash player, it also defines when the controls display in the player as well as when the player will load. Supported values are:
+controls=0 – Player controls do not display in the player. For IFrame embeds, the Flash player loads immediately.
+controls=1 (default) – Player controls display in the player. For IFrame embeds, the controls display immediately and the Flash player also loads immediately.
+controls=2 – Player controls display in the player. For IFrame embeds, the controls display and the Flash player loads after the user initiates the video playback.
+Note: The parameter values 1 and 2 are intended to provide an identical user experience, but controls=2 provides a performance improvement over controls=1 for IFrame embeds. Currently, the two values still produce some visual differences in the player, such as the video title's font size. However, when the difference between the two values becomes completely transparent to the user, the default parameter value may change from 1 to 2.
+
+fs
+Supported players	HTML5, AS3
+Description	Setting this parameter to 0 prevents the fullscreen button from displaying in the player. The default value is 1, which causes the fullscreen button to display.
+
+iv_load_policy
+Supported players	HTML5, AS3
+Description	Setting the parameter's value to 1 causes video annotations to be shown by default, whereas setting to 3 causes video annotations to not be shown by default. The default value is 1.
+
+loop
+Supported players	HTML5, AS3
+Description	In the case of a single video player, a setting of 1 causes the player to play the initial video again and again. In the case of a playlist player (or custom player), the player plays the entire playlist and then starts again at the first video.
+
+Supported values are 0 and 1, and the default value is 0.
+
+Note: This parameter has limited support in the AS3 player and in IFrame embeds, which could load either the AS3 or HTML5 player. Currently, the loop parameter only works in the AS3 player when used in conjunction with the playlist parameter. To loop a single video, set the loop parameter value to 1 and set the playlist parameter value to the same video ID already specified in the Player API URL:
+ex https://www.youtube.com/embed/af_ktma2PIA?&loop=1&playlist=af_ktma2PIA
+https://www.youtube.com/VIDEO_ID?
+    &loop=1
+    &playlist=VIDEO_ID
+
+modestbranding
+Supported players	HTML5, AS3
+Description	This parameter lets you use a YouTube player that does not show a YouTube logo. Set the parameter value to 1 to prevent the YouTube logo from displaying in the control bar. Note that a small YouTube text label will still display in the upper-right corner of a paused video when the user's mouse pointer hovers over the player.
+
+playlist
+Supported players	HTML5, AS3
+Description	This parameter specifies a comma-separated list of video IDs to play. If you specify a value, the first video that plays will be the VIDEO_ID specified in the URL path, and the videos specified in the playlist parameter will play thereafter.
+
+rel
+Supported players	HTML5, AS3
+Description	This parameter indicates whether the player should show related videos when playback of the initial video ends. Supported values are 0 and 1. The default value is 1.

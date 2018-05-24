@@ -1,0 +1,11 @@
+Remove a page from a website
+
+Got to website.com/robots.txt
+
+There you will see a list of all the pages of this site that are not being crawled. 
+Check ftp to make sure there isn't already a robots.txt file there.
+If there is add Disallow: /PAGE.aspx to the bottom and upload into ftp.
+If not copy everything from the /robots.txt page, add Disallow: /PAGE.aspx to the bottom and upload into ftp.
+Upload the robots.txt file in their root directory in ftp.
+By default the platform has a robots.txt file for every site. If you put it in the root folder it will read that one instead.
+We are just making it read our own robots.txt file instead of reading the default.

@@ -1,0 +1,82 @@
+SlideShow full size
+Move the home banner outside of the grid container
+
+<div class="homebanner">
+    <div id="homebannerslides">
+        <slideshow2 id="slideshowid" name="Bedroom"></slideshow2>
+    </div>
+</div>
+<div class="clear"></div>
+
+<div class="grid-container">
+
+Add to CSS
+
+<style>
+.HomePageForm #divworkspacearea {
+  width: 100%;
+  max-width: 100%;
+  padding:0;
+  box-sizing: border-box;
+}
+</style>
+
+
+
+NEW PREMIUM SLDESHOW
+<div id="homebanner">
+  <slideshow2 id="slideshowid" name="Home Page"></slideshow2>
+</div>
+<div class="clear"></div>
+
+
+
+PREMIUM SLIDE SHOW
+<!--START PREMIUM SLIDESHOW-->
+<script type="text/javascript">
+$(document).ready(function() {
+
+    var imgEle = document.getElementsByClassName('lazyOwl');
+    for (var i = 0; i < imgEle.length; i++) {
+        var imgPath = SlideImages['slideshowid'].next();
+        imgEle[i].src = imgPath;
+    }
+
+});
+</script>
+
+Old Premium Slideshow
+<slideshow id="slideshowid" width="1316" height="804" speed="5000" path="SlideShows/Home Page" premium="yes"></slideshow>
+<div id="homebannerslides" class="owl-carousel owl-theme">
+    <div class="item">
+        <a href=""><img class="lazyOwl" src="/css/epiphany3/images/image.jpg" alt=""></a>
+    </div>
+    <div class="item">
+        <a href=""><img class="lazyOwl" src="/css/epiphany3/images/image.jpg" alt=""></a>
+    </div>
+    <div class="item">
+        <a href=""><img class="lazyOwl" src="/css/epiphany3/images/image.jpg" alt=""></a>
+    </div>
+    <div class="item">
+        <a href=""><img class="lazyOwl" src="/css/epiphany3/images/image.jpg" alt=""></a>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#homebannerslides").owlCarousel({
+
+        navigation: true, // Show next and prev buttons
+        slideSpeed: 300,
+        paginationSpeed: 400,
+        autoPlay: 5000,
+        singleItem: true,
+        transitionStyle: "fade"
+
+    });
+});
+</script>
+<!-- END PREMIUM SLIDESHOW -->
+
+Regular Slideshow
+<slideshow id="slideshowid" width="1316" height="804" speed="5000" path="SlideShows/Home Page"></slideshow>
