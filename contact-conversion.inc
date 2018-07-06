@@ -1,6 +1,6 @@
 Contact-Conversion 6.70
 
-<script type="text/javascript">
+<script>
     $(window).on("load", function(){
         window.location = "/thank-you.inc";
     });
@@ -8,7 +8,7 @@ Contact-Conversion 6.70
 
 Contact-Conversion 6.65
 
-<script type="text/javascript">
+<script>
     $(window).load(function(){
     window.location = "/thank-you.inc";
     });

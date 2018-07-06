@@ -4,17 +4,17 @@ Owl Carousel
 	<div class="containerbox">
 		<div id="Department" class="owl-carousel">
 			<a href="/livingroom.inc"><img src="/css/20056/images/livingroombanner.jpg" alt="Living Room" class="img-responsive" width="275" height="313" /></a>
-			
+
 			<a href="/diningroom.inc"><img src="/css/20056/images/dinningroombanner.jpg" alt="Living Room" class="img-responsive" width="275" height="313" /></a>
-			
+
 			<a href="/bedroom.inc"><img src="/css/20056/images/bedroombanner.jpg" alt="Living Room" class="img-responsive" width="275" height="313" /></a>
-			
+
 			<a href="/entertainment.inc"><img src="/css/20056/images/entertainmentbanner.jpg" alt="Living Room" class="img-responsive" width="275" height="313" /></a>
-			
+
 			<a href="/homeoffice.inc"><img src="/css/20056/images/homeofficebanner.jpg" alt="Living Room" class="img-responsive" width="275" height="313" /></a>
-			
+
 			<a href="/accessories.inc"><img src="/css/20056/images/accessoriesbanner.jpg" alt="Living Room" class="img-responsive" width="275" height="313" /></a>
-				
+
 		</div>
 		<div class="clear"></div>
 	</div>
@@ -28,7 +28,7 @@ Owl Carousel for Attribute List
 		<div id="brand-slider">
 			<AttributeList id="Brandslide" class="owl-carousel" ListAttribute="Brand" ItemType="item" Thumbnail="Yes" />
 			<div class="clear"></div>
-		</div> 
+		</div>
 	</div>
 </div>
 
@@ -67,6 +67,8 @@ Owl Carousel for Product Attribute List
 Place script on botom of page
 
 <script>
+
+// ADD CLASS owl-carousel TO ATTRIBUTE LIST!
 $(document).ready(function(){
 
 	$("#Department, #Onsale, #Brandslide").owlCarousel({
@@ -90,6 +92,23 @@ $(document).ready(function(){
 		}
 	});
 
+});
+
+// ADD CLASS owl-carousel TO ATTRIBUTE LIST!
+$(document).ready(function() {
+	$("#Brandslide").owlCarousel({
+		lazyLoad: true,
+		margin: 10,
+		autoplay: 5000,
+		loop: true,
+		dots: false,
+		responsive: {
+			0: { items: 2 },
+			600: { items: 3 },
+			900: { items: 5 },
+			1000: { items: 6 }
+		}
+	});
 });
 
 </script>
@@ -179,7 +198,7 @@ $("#homebannerslides").owlCarousel({
     transitionStyle:"fade"
   });
 </script>
- 
+
 <script>
 //BRANDS SCROLL//
   $("#brandslist").easySlider({

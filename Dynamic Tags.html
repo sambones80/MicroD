@@ -1,0 +1,32 @@
+CUSTOMER CONTENT
+<!-- CUSTOMER CONTENT -->
+<include file="CustomerContent/the-content.inc"></include>
+<!-- END CUSTOMER CONTENT -->
+___________________________________________________________________________________________
+
+SCHEDULED CONTENT
+<!-- SCHEDULED CONTENT -->
+<ScheduledContent name="PAGENAME CONTENT"></ScheduledContent>
+<!-- END SCHEDULED CONTENT -->
+
+		(YYYYMMDDHHMMAM)
+?preview=2018XXXX1205AM
+___________________________________________________________________________________________
+
+ATTRIBUTE LISTS
+
+Header:
+<AttributeList id='LivingRoom' ListAttribute='Type' FilterAttribute='Room'  FilterAttributeValue='Living Room' ItemType='item' />
+SIDE NAV (Categorynav.inc):
+<AttributeList id='LivingRoom2' ListAttribute='Type' FilterAttribute='Room'  FilterAttributeValue='Living Room' ItemType='item' />
+LANDING PAGE (Livingroom.inc):
+<AttributeList id='LivingRoom3' class='CategoryImage' ListAttribute='Type' FilterAttribute='Room' FilterAttributeValue='Living Room' ItemType='item' Thumbnail='Yes' SEOContent='Yes' OmniVue='Yes' />
+OUTDOOR:
+<a href='/outdoor.inc'>Outdoor</a>
+<AttributeList ListAttribute='Type' FilterAttribute='Department' FilterAttributeValue='Outdoor Furniture' ItemType='item' />
+
+FOOTER BRANDS:
+<attributelist id='FooterBrands' listattribute='Brand' itemtype='item' />
+
+BRAND LANDING PAGE (Brands.inc):
+<AttributeList id='Brand' class='BrandLogos' ListAttribute='Brand' ItemType='item' Thumbnail='Yes' />

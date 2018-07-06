@@ -21,7 +21,7 @@
     opacity: .85;
 }
 
-/*** Left & Right Arrow Navigation (needs to be styled) ***/ 
+/*** Left & Right Arrow Navigation (needs to be styled) ***/
 .owl-nav {
 	display: block !important;
 	visibility: hidden;

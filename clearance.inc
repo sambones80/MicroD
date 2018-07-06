@@ -49,7 +49,7 @@ Updated that I created for Noah's
 			<div class="clearanceitemtext">
 				<h2>Sample Clearance Item #1</h2>
 				<p>Call for Pricing!</p>
-				
+
 			</div>
 		</div>
 		<div class="grid-50 tablet-grid-50 clearanceitemsection">
@@ -164,7 +164,6 @@ Old:
 			</div>
 		</div>
 
-		
 	</div>
 	<div class="clear"></div>
 </div>

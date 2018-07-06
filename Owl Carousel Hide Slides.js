@@ -7,10 +7,10 @@ $(document).ready(function() { // Get today's date
 	var yyyy = today.getFullYear();
 	if(dd<10) {
 	    dd = '0'+dd
-	} 
+	}
 	if(mm<10) {
 	    mm = '0'+mm
-	} 
+	}
 
 	var todaysDate = mm + '/' + dd + '/' + yyyy; // Build today's date string
 
@@ -37,11 +37,11 @@ $(document).ready(function() { // Get today's date
 	var yyyy = today.getFullYear();
 	if(dd<10) {
 	    dd = '0'+dd
-	} 
+	}
 
 	if(mm<10) {
 	    mm = '0'+mm
-	} 
+	}
 
 	var todaysDate = mm + '/' + dd + '/' + yyyy; // Build today's date string
 

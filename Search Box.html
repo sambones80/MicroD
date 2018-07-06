@@ -2,39 +2,35 @@ SEARCHBOX
 
 <div>
     <div id="searchbox" class="no-print">
-      <div id="searchboxright">
-                <div id="loggedinas" style="display: none; visibility: hidden"></div>
-        <a href="javascript:void(0)" onClick="goSearch();">GO</a>
-      </div>  
-      <div id="searchboxleft">
-        <label class="hidden" for="SearchValue2">Search</label>
-        <input type="text" id="SearchValue" name="SearchValue" onkeypress="submitsearch(event);" placeholder="Search">
-      </div>
+        <div id="searchboxright">
+            <div id="loggedinas" style="display: none; visibility: hidden"></div>
+            <a href="javascript:void(0)" onClick="goSearch();">GO</a>
+        </div>
+        <div id="searchboxleft">
+            <label class="hidden" for="SearchValue2">Search</label>
+            <input type="text" id="SearchValue" name="SearchValue" onkeypress="submitsearch(event);" placeholder="Search">
+        </div>
     </div>
-</div> 
-
+</div>
 
 <script>
-$( document ).ready(function() {
-function goSearch2() {
-  var sv = document.getElementById('SearchValue');
-  var infield = $("#SearchValue").val();
-
-  if(jQuery.trim(infield).length > 0) {
-
-    if (infield.length == 1) {
-      if (!infield.match(/^[a-zA-Z0-9-_]+$/)) {
-          alert("Please enter a Keyword.");
-      } else {
-          window.location.href = '/searchresults.aspx?wcsearch=' + sv.value;
-      }
-    } else {
-      window.location.href = '/searchresults.aspx?wcsearch=' + sv.value;
+$(document).ready(function() {
+    function goSearch2() {
+        var sv = document.getElementById('SearchValue');
+        var infield = $("#SearchValue").val();
+        if (jQuery.trim(infield).length > 0) {
+            if (infield.length == 1) {
+                if (!infield.match(/^[a-zA-Z0-9-_]+$/)) {
+                    alert("Please enter a Keyword.");
+                } else {
+                    window.location.href = '/searchresults.aspx?wcsearch=' + sv.value;
+                }
+            } else {
+                window.location.href = '/searchresults.aspx?wcsearch=' + sv.value;
+            }
+        } else {
+            alert("Please enter a keyword.");
+        }
     }
-
-  } else {
-    alert("Please enter a keyword.");
-  }
-}
 });
 </script>
