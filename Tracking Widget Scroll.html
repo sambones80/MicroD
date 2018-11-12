@@ -1,0 +1,58 @@
+<a href="javascript:void(0);" class="track-delivery">Track Your Delivery <i class="fa fa-angle-double-down"></i></a>
+
+<div id="tracking-anchor"></div>
+
+<section id="tracking">
+    <div class="grid-container">
+        <div class="grid-60 prefix-20 tablet-grid-80 tablet-prefix-10">
+            <div class="tracking-box">
+                <div class="home-title">
+                    <p><span>Track Your Delivery</span></p>
+                </div>
+                <iframe src="https://budgetfurniture.dispatchtrack.com/track/widget/c024261" height="97px" width="252px"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+$(document).ready(function() {
+
+		//Track Delivery scroll to anchor
+    $('.track-delivery').click(function() {
+    	clickOffToClose();
+        if (window.location.pathname == '/') {
+            document.querySelector('#tracking').scrollIntoView({
+                behavior: 'smooth'
+            });
+        } else {
+            window.location = '/#tracking-anchor';
+        };
+    });
+
+});
+</script>
+
+<style>
+/*** TRACKING *********************************************************/
+
+#tracking {
+    text-align: center;
+    margin-bottom: 95px;
+}
+
+.tracking-box,
+.tracking-box span {
+    background-color: #eee;
+}
+
+.tracking-box {
+    padding: 40px 10px;
+}
+
+#tracking iframe {
+    border: none;
+}
+
+/*** END TRACKING *****************************************************/
+</style>

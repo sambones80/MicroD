@@ -51,7 +51,7 @@ $(window).load(function() {
             $(this).parent('a').attr('href', 'http://shifmanmattresses.com/retailer/gladhill/').attr('target', '_blank');
         }
     });
-    if (window.location.href.indexOf("/slone-clearance-center/brand-type.aspx") > -1 || window.location.href.indexOf("brand=slone-clearance-center") > -1) {
+    if (window.location.href.toLowerCase().indexOf("/slone-clearance-center/brand-type.aspx") > -1 || window.location.href.indexOf("brand=slone-clearance-center") > -1) {
         $('#ItemBrowserCurrentAttribute').append("<br/><p style='color: red; size: 10px'>NOT ALL ITEMS ARE LOCATED IN THE SHOWROOM,<br/>SOME ITEMS ARE AT THE CLEARANCE CENTER LOCATED AT 1650 TIMOCUAN WAY <br/> CLEARANCE CENTER IS OPEN M-F 9:00 am to 4:30 pm");
     }
 });
@@ -212,8 +212,10 @@ $(document).ready(function() {
 
 <script>
 $(document).ready(function() {
-            if ($('.ProductInfoSpanValueCategory').text() === "Mattresses" || window.location.href.toLowerCase().indexOf("/itembrowser.aspx?action=attributes&ItemType=Furniture&Department=Mattresses".toLowerCase()) > -1) {
-                $('body').append("<script type=\"text/javascript\">var rl_siteid = \"cc43d3c1-544d-464a-b39b-38057264c1ab\";
+    if ($('.ProductInfoSpanValueCategory').text() === "Mattresses" || window.location.href.toLowerCase().indexOf("/itembrowser.aspx?action=attributes&ItemType=Furniture&Department=Mattresses".toLowerCase()) > -1) {
+        $('body').append("<script type=\"text/javascript\">var rl_siteid = \"cc43d3c1-544d-464a-b39b-38057264c1ab\"");
+    }
+});
 </script>
-<script src=\ "//cdn.rlets.com/capture_static/mms/mms.js\" async=\ "async\"></script>"); }
+<script src="//cdn.rlets.com/capture_static/mms/mms.js" async></script>
 </script>

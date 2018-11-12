@@ -1,6 +1,6 @@
-<page title="Employment | Smith Village Home Furnishings | Jacobus, PA, 17407" />
-<metadata name="keywords" content="Smith Village Home Furnishings, Employment, Smith Village Home Furnishings Furniture Store, Smith Village Home Furnishings Store, Smith Village Home Furnishings Appliances, Smith Village Home Furnishings Home Furnishings, Furniture Store, Home Furnishings, Appliances, Jacobus, PA, 17407" />
-<metadata name="description" content="Employment Questionnaire Form." />
+<page title="Employment | Smith Village Home Furnishings | Jacobus, PA, 17407"></page>
+<metadata name="keywords" content="Smith Village Home Furnishings, Employment, Smith Village Home Furnishings Furniture Store, Smith Village Home Furnishings Store, Smith Village Home Furnishings Appliances, Smith Village Home Furnishings Home Furnishings, Furniture Store, Home Furnishings, Appliances, Jacobus, PA, 17407"></metadata>
+<metadata name="description" content="Employment Questionnaire Form."></metadata>
 <!-- Employment Questionnaire -->
 <div class="grid-container">
     <div class="grid-100">

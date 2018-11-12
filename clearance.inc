@@ -1,9 +1,9 @@
 
 Updated that I created for Noah's
 
-<page title="Clearance Items | METADATA COMPANY | METADATA CITY, METADATA STATE" />
-<metadata name="keywords" content="METADATA COMPANY Clearance Items, METADATA COMPANY Furniture Store, METADATA COMPANY Home Furnishings, Furniture Store, Home Furnishings, METADATA CITY, METADATA STATE METADATA ZIPCODE" />
-<metadata name="description" content="METADATA COMPANY clearance items." />
+<page title="Clearance Items | METADATA COMPANY | METADATA CITY, METADATA STATE"></page>
+<metadata name="keywords" content="METADATA COMPANY Clearance Items, METADATA COMPANY Furniture Store, METADATA COMPANY Home Furnishings, Furniture Store, Home Furnishings, METADATA CITY, METADATA STATE METADATA ZIPCODE"></metadata>
+<metadata name="description" content="METADATA COMPANY clearance items."></metadata>
 <!-- Static Page -->
 <div class="grid-container">
 	<div class="grid-20 tablet-grid-20 hide-on-mobile">

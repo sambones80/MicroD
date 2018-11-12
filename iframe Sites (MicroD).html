@@ -1,0 +1,18 @@
+Install iframe by using the code below EXACTLY AS IT APPEARS!
+(script directly above iframe)
+
+<script src="//files.microdinc.com/css/1473/scripts/iframe-sizer.js"></script>
+<iframe id="MDFrame" scrolling="no" style="width:100%;border:0;" src="http://www.DOMAIN.com"></iframe>
+
+Under certain circumstances, you may need to add additional CSS (depending on your parent application / code):
+<style>
+	iframe {
+	    width: 1px;
+	    min-width: 100%; *width: 100%;
+	}
+</style>
+
+Since the code from step 1 uses JavaScript to set the iframe height, you shouldn't need to add any "css hacks" such as padding-top, absolute positioning, etc. Doing so can break the responsiveness of our iframe code, we will not provide support if the implementation isn't configured exactly as shown above.
+
+Note:
+The scrolling attribute is obsolete in HTML5 but still used in our code as a fallback for older browsers. Technical users may choose to leave this out entirely and use CSS.
