@@ -1,0 +1,57 @@
+auto: Size based on content
+fr: Size based on fraction of available space in container
+
+repeat(number, unit): sets a number of tracks, sets a unit of size
+
+minmax(#px, #px): Sets minimum/maximum size, fr can be used as max
+
+auto-fill: Used in repeat() to set the number of tracks that will fit in container.
+			Set a min px size to make responsive by wrapping to next row.
+			Will add empty tracks if not enough elements to fill container.
+auto-fit: Same as auto-fill but empty tracks have no width, use with minmax()
+			Set a max size 1fr to make responsive by expanding all tracks to fit container.
+
+<style>
+.grid-container {
+    /* Set display:grid on the container */
+    display: grid;
+
+    /* Basic usage */
+    grid-template-columns: 200px 1fr 200px; /* Basic track list */
+    grid-template-rows: 100px 200px;
+    grid-row-gap: 15px;
+    grid-column-gap: 20px;
+    grid-gap: 15px 20px; /* Gap shorthand - row column */
+
+    /* Repeat function - 3 tracks, all same size */
+    grid-template-columns: repeat(3, 1fr);
+
+    /* Repeat function within basic track list */
+    grid-template-columns: 200px repeat(3, 1fr) 100px;
+
+    /* Minmax() within basic track list */
+    grid-template-columns: minmax(200px, 300px) 1fr 1fr;
+
+    /* Minmax() within Repeat function */
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+
+    /* Repeat function with auto-fit and minmax()
+    	Creates a fully responsive layout.
+    	Expands to fit container and breaks to next row when min-size it reached. */
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+	/* Implicit tracks - Tracks not defined in explicit styling, added automatically to fit additional grid elements */
+	/* All implicit rows set at 250px tall - Use for all rows if no explicit row styling */
+	grid-auto-rows: 250px;
+
+	/* All implicit rows minimum 150px tall, expand to fit content */
+	grid-auto-rows: minmax(150px, auto);
+
+	/* Auto-flow - defaults to row.				Row:	Column:		Row dense:;
+	Row: left-to-right - top-to-bottom,			1234	1357		__1__ __2__ _4_
+	Column: top-to-bottom - left-to-right;		5678	2468		__3__ __5__ _6_
+
+	Dense: Additional keyword that will flow smaller content in to fill holes */
+	grid-auto-flow: column;
+}
+</style>

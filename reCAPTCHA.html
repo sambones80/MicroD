@@ -1,4 +1,77 @@
-reCAPTCHA
+INVISIBLE reCAPTCHA ---
+
+<button data-button-type="submitform" id="ReCaptcha-UNIQUEID" class="g-recaptcha" name="PREFIX_submit" tabindex="">SEND</button>
+
+Join Email
+<button data-button-type="submitform" id="ReCaptchaJoinEmail" class="g-recaptcha" name="JoinEmail_submit" tabindex="">SEND</button>
+
+Contact Us
+<button data-button-type="submitform" id="ReCaptchaContact" class="g-recaptcha" name="ContactUs_submit" tabindex="">SEND</button>
+
+Positioning the badge
+data-badge="bottomleft" - bottomright is default
+data-badge="inline" - must position with CSS
+
+LEFT BADGE -
+
+Join Email
+<button data-button-type="submitform" data-badge="bottomleft" id="ReCaptchaJoinEmail" class="g-recaptcha" name="JoinEmail_submit" tabindex="">SEND</button>
+
+Contact Us
+<button data-button-type="submitform" data-badge="bottomleft" id="ReCaptchaContact" class="g-recaptcha" name="ContactUs_submit" tabindex="">SEND</button>
+
+Email Signup (home)
+<button data-button-type="submitform" data-badge="bottomleft" id="ReCaptchaEmailSignup" class="g-recaptcha" name="EmailSignup_submit" tabindex="2">SEND</button>
+
+
+Inline-block form elements -
+<script>
+$(window).on('load', function(){
+	$('.grecaptcha-badge').parent().css('display','inline');
+});
+</script>
+
+Don't let other elements cover the badge
+<style>
+.grecaptcha-badge {
+    z-index: 999999;
+}
+</style>
+
+Hiding the badge
+<style>
+.grecaptcha-badge {
+    visibility: hidden !important;
+}
+
+.recaptcha-disclaimer {
+    margin: 10px;
+}
+
+.recaptcha-disclaimer p {
+    font-size: .7em;
+}
+
+.RequestFormRequiredInfo::after,
+.EmailProductPopupRequiredInfo::after {
+    content: 'This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.';
+    display: block;
+    margin-top: 5px;
+    font-size: .95em;
+}
+</style>
+
+<div class="recaptcha-disclaimer">
+	<p>This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy" target="_blank" style="text-decoration:underline;color:blue;white-space:nowrap;">Privacy Policy</a> and <a href="https://policies.google.com/terms" target="_blank" style="text-decoration:underline;color:blue;white-space:nowrap;">Terms of Service</a> apply.</p>
+</div>
+
+Contact-us & Join-email forms:
+<p style="margin:0 10px;"><span class="addinfosmalltext">This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy" target="_blank" style="white-space:nowrap;">Privacy Policy</a> and <a href="https://policies.google.com/terms" target="_blank" style="white-space:nowrap;">Terms of Service</a> apply.</span></p>
+
+______________________________________________________________________________________________
+
+
+OLD - reCAPTCHA
 
 Google reCAPTCHA
 1 - Request a Google reCaptcha site key and secret key by signing in to our marketing google account then going to the link below and specifying the domain:

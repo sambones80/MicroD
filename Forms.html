@@ -26,7 +26,7 @@ Contact-Conversion 6.65
 
 <script type="text/javascript">
     $(window).load(function(){
-    window.location = "/thank-you.inc";
+        window.location = "/thank-you.inc";
     });
 </script>
 
@@ -53,6 +53,18 @@ Multiple with CC
 
 Multiple with CC and BCC
 <SubmitForm emailto="developer1@kodyaz.com;developer2@kodyaz.com&cc=developer3@eralper.com&bcc=developer4@eralper.com"></SubmitForm>
+
+
+Multiple email address notifications based on location (or any input)
+<submitform id="contactus" formname="Contact Us" inputnameprefix="ContactUs_" message="Thank you for submitting this form." emailto="InputName|Option-1|email1@yoursite.com|Option-2|email2@yoursite.com"></submitform>
+
+<p><label for="">Location(or whatever):*</label></p>
+
+<select class="validate[required]" name="ContactUs_InputName" id="" tabindex="">
+    <option value="" selected="">Please Choose</option>
+    <option value="Option-1">Option 1</option>
+    <option value="Option-2">Option 2</option>
+</select>
 
 
 Check form after resetting the cache and in incognito mode.

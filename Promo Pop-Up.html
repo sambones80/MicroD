@@ -1,4 +1,38 @@
-<!-- New Promo Function -->
+<!-- SIMPLE MAGNIFIC FUNCTION -->
+<script>
+$(document).ready(function() {
+    if (!readCookie("promo_cookie") && window.outerWidth > 768) {
+        setTimeout(function() {
+            $.magnificPopup.open({
+                items: [{
+                    src: $('<div id="promo-spree" style="text-align:center;"><a href="/registertowin.inc"><img src="/css/799/images/Woodley-Web-banner-293x1080_new.jpg" width="700" height="190" alt="Woodleys" /></a></div>'),
+                    type: 'inline'
+                }],
+                closeOnContentClick: true,
+                prependTo: $('#form1')
+            });
+            writeCookie("promo_cookie", 30);
+        }, 3000);
+    }
+    //display on screen size under 768 if required//
+    else {
+        setTimeout(function() {
+            $.magnificPopup.open({
+                items: [{
+                    src: $('<div id="promo-spree" style="text-align:center;"><a href="/registertowin.inc"><img src="/css/799/images/Woodley-Web-banner-293x1080_mobile.jpg" width="400" height="109" alt="Woodleys" /></a></div>'),
+                    type: 'inline'
+                }],
+                closeOnContentClick: true,
+                prependTo: $('#form1')
+            });
+            writeCookie("promo_cookie", 30);
+        }, 3000);
+    }
+});
+</script>
+
+<!-- USE MY NEW VERSION INSTEAD OF BELOW -->
+<!-- OLD Promo Function -->
 <script src="/css/epiphany3/scripts/email.min.js"></script>
 <script>
 $(document).ready(function(){
@@ -25,7 +59,7 @@ $(document).ready(function(){
 <SubmitForm id="PromotionalPopUp" formname="Promotional Pop Up" inputnameprefix="PromoSignup_" message="Thank you for signing up for our emails."></SubmitForm>
 <!-- End New Promo Function -->
 
-PASTE CUSTOMER SUPPLIED CODE IN EMAIL-IFRAME.HTML
+<!-- PASTE CUSTOMER SUPPLIED CODE IN EMAIL-IFRAME.HTML -->
 
 <style>
 /* Promo Function */

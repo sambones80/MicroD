@@ -219,3 +219,10 @@ $(document).ready(function() {
 </script>
 <script src="//cdn.rlets.com/capture_static/mms/mms.js" async></script>
 </script>
+
+LINK ATTACHMENTS - IF NO URL, REMOVE A TAG
+<script>
+$('.item-info-links p a[href*="javascript:void"]').each(function() {
+    $(this).replaceWith($(this).text());
+});
+</script>

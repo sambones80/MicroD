@@ -1,7 +1,7 @@
 Magnific Pop-Up http://dimsemenov.com/plugins/magnific-popup/ Maps, Videos //use the url in the iframe//
 
 <div class="sale-detail-button">
-    <a class="popup-gmaps" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3472.0132500825507!2d-98.49867288489722!3d29.515972982077646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865c5fe2bff73551%3A0x66d521d17e4a4445!2s210+W+Rector%2C+San+Antonio%2C+TX+78216!5e0!3m2!1sen!2sus!4v1510148994197">Get Directions</a>
+    <a class="popup-gmaps" href="https://www.google.com/maps/embed?XXXXXXXXXXXXX">Get Directions</a>
 </div>
 
 <script>
@@ -25,7 +25,6 @@ Simple iFrame:
 </script>
 
 Images
-
 <div class="popup-gallery">
     <a href="" title=""><img src="" width="75" height="75"></a>
     <a href="" title=""><img src="" width="75" height="75"></a>
@@ -74,6 +73,19 @@ $(document).ready(function() {
             src: '<div class="spanishPopup" style="text-align: center;"><a href="#spanishstorelocation" onclick="$.magnificPopup.close();"><img src="\/css\/XXXX\/images\/.png" style="max-width: 100%;"></a></div>',
         },
         type: 'inline'
+    });
+});
+</script>
+
+Video
+<script>
+$(document).ready(function() {
+    $('.popup-youtube').magnificPopup({
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: false,
+        fixedContentPos: false
     });
 });
 </script>
