@@ -1,0 +1,26 @@
+<div class="threed-bar" style="display:none;padding: 10px; position: sticky; top: 0; background: #f2771b; text-align: center; color: #fff;">
+    <p>TRY OUR NEW 3D SHOPPING EXPERIENCE - <a style="color:#fff;" href="/3d-product-visualization.inc">SHOP NOW</a> <a href="javascript:void(0);" onclick="close3d()" style="color:#fff;float:right;"><i class="fa fa-close"></i></a></p>
+</div>
+
+<script>
+$(document).ready(function(){
+    var cookie3D = readCookie("cookie3D");
+    if (cookie3D !== null) {
+        close3d();
+    } else {
+        $('.threed-bar').show();
+    }
+
+    if (window.location.href.match(/(1108-northgate-blue-1766|1108-mahi-turquoise-1766|1108-custom-1766|1108-1766|1444-04-1766|1768-1766|2126-b-1766|2588-05sw-1766|2772-05sw-1766|3770-00-1766|4105-05sg-1766|3d-product-visualization\.inc)/)) {
+       $('.threed-bar').remove();
+       $('#item-info-breadcrumbs').empty();
+       $('#item-info-breadcrumbs').append('<li><a href="/"><span>Home </span></a></li>');
+       $('#item-info-breadcrumbs').append('<li><a href="/3d-product-visualization.inc"><span>&nbsp; 3D Products</span></a></li>');
+    }
+});
+
+function close3d(){
+    $('.threed-bar').remove();
+    writeCookie('cookie3D', '', null);
+}
+</script>

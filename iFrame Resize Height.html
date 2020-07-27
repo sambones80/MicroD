@@ -1,0 +1,16 @@
+<script>
+$('iframe').on('load', function() {
+    iframeResize();
+});
+
+$(window).on('resize', function() {
+    iframeResize();
+});
+
+function iframeResize() {
+    setTimeout(function() {
+        var iframeHeight = $('iframe').contents().find('.ctct-inline-form').height() + 50;
+        $('iframe').css('height', iframeHeight);
+    }, 1000);
+}
+</script>

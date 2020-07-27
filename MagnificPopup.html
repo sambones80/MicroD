@@ -1,7 +1,7 @@
 Magnific Pop-Up http://dimsemenov.com/plugins/magnific-popup/ Maps, Videos //use the url in the iframe//
 
 <div class="sale-detail-button">
-    <a class="popup-gmaps" href="https://www.google.com/maps/embed?XXXXXXXXXXXXX">Get Directions</a>
+    <a class="popup-gmaps" href="https://www.google.com/maps/embed?204952049520495X">Get Directions</a>
 </div>
 
 <script>
@@ -45,8 +45,12 @@ $(document).ready(function() {
         },
         image: {
             tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-            titleSrc: function(item) {
-                return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
+            titleSrc: 'title',
+            titleSrc: function(item) { // Add text to every title
+                return item.el.attr('title') + '<small>add this text to every title</small>';
+            },
+            titleSrc: function(item) { // Use alt text as title - no title attribute needed (easiest solution)
+                return item.el.find('img').attr('alt');
             }
         }
     });
@@ -58,7 +62,7 @@ Image
 $(document).ready(function() {
     $.magnificPopup.open({
         items: {
-            src: '/css/XXXX/images/.png'
+            src: '/css/20495/images/.png'
         },
         type: 'image'
     });
@@ -70,7 +74,7 @@ Image and links
 $(document).ready(function() {
     $.magnificPopup.open({
         items: {
-            src: '<div class="spanishPopup" style="text-align: center;"><a href="#spanishstorelocation" onclick="$.magnificPopup.close();"><img src="\/css\/XXXX\/images\/.png" style="max-width: 100%;"></a></div>',
+            src: '<div class="spanishPopup" style="text-align: center;"><a href="#spanishstorelocation" onclick="$.magnificPopup.close();"><img src="\/css\/20495\/images\/.png" style="max-width: 100%;"></a></div>',
         },
         type: 'inline'
     });

@@ -1,3 +1,21 @@
+<SubmitForm id="formID" formname="FormName" inputnameprefix="FormName_" message="Thank you for submitting this form." emailto="XXX@xxx.com"></SubmitForm>
+<div class="grid-60 prefix-20 tablet-grid-80 tablet-prefix-10 mobile-grid-100">
+    <p style="text-align:right;font-size:.8rem;">*Required</p>
+    <p><label for="name">*Name:</label></p>
+    <input style="width:100%;height:40px;box-sizing:border-box;border:1px solid #ccc;margin-bottom:20px;padding:10px;font-size:16px;" class="validate[required,length[0,100]]" id="name" name="FormName_Name" tabindex="1" type="text" value="">
+    <p><label for="phone">*Phone Number:</label></p>
+    <input style="width:100%;height:40px;box-sizing:border-box;border:1px solid #ccc;margin-bottom:20px;padding:10px;font-size:16px;" class="validate[required,length[0,100]]" id="phone" name="FormName_Phone" tabindex="2" type="text" value="">
+    <p><label for="email">*Email:</label></p>
+    <input style="width:100%;height:40px;box-sizing:border-box;border:1px solid #ccc;margin-bottom:20px;padding:10px;font-size:16px;" class="validate[required,custom[email],length[0,100]]" id="email" name="FormName_Email" tabindex="3" type="text" value="">
+    <p><label for="message">*More Information:</label></p>
+    <textarea style="width:100%;height:135px;box-sizing:border-box;border:1px solid #ccc;padding:10px;font-size:16px;" id="message" name="FormName_Message" placeholder="Please let us know how we can help." tabindex="4"></textarea>
+    <div id="submitcontactform">
+        <input name="FormName_submit" type="submit" value="SEND">
+    </div>
+</div>
+<div class="clear"></div>
+
+
 <div class="grid-container">
     <div class="grid-100">
         <div class="pageheading">

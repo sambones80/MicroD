@@ -31,6 +31,91 @@ $(document).ready(function() {
 });
 </script>
 
+<!-- Join Email Popup -->
+<div id="join-email-popup" class="wrapperJoinEmail mfp-hide">
+    <h2>Want to be the first to know?</h2>
+    <p>Get a head start on the best deals in town!</p>
+    <SubmitForm id="email-popup-form" formname="Email Pop Up" inputnameprefix="emailPopup_" message="Thank you for signing up for our emails."></SubmitForm>
+    <input class="validate[required,custom[email]]" type="text" placeholder="Email Address" name="emailPopup_Email" id="email" value="" />
+    <input class="join-email-submit" name="emailPopup_submit" type="submit" value="RECEIVE EXCLUSIVE OFFERS!" />
+</div>
+
+<script>
+$(document).ready(function() {
+    if (!readCookie("promo_cookie") && window.innerWidth > 768) {
+        setTimeout(function() {
+            $.magnificPopup.open({
+                items: {
+                    src: '#join-email-popup',
+                },
+                type: 'inline',
+                prependTo: $('#form1, #Form1')
+            });
+            writeCookie("promo_cookie", 30);
+        }, 3000);
+    }
+});
+</script>
+<!-- END Join Email Popup -->
+
+<style>
+/* Join Email Popup */
+#join-email-popup {
+    position: relative;
+    margin: 0 auto;
+    padding: 10px 10px 20px;
+    box-sizing: border-box;
+    max-width: 560px;
+    text-align: center;
+    background-color: #fcea68;
+    border: 1px solid #d8d8d8;
+}
+
+#join-email-popup .mfp-close {
+    opacity: 1;
+    color: #000;
+}
+
+#join-email-popup h2 {
+    padding: 10px;
+    text-transform: uppercase;
+    color: #1375bc;
+}
+
+#join-email-popup p {
+    padding: 10px;
+    font-size: 1.25em;
+    font-weight: 700;
+}
+
+#join-email-popup input {
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 80%;
+    height: 36px;
+    font-size: 16px;
+}
+
+#join-email-popup input[type="text"] {
+    border: 1px solid #fff;
+}
+
+#join-email-popup input[type="submit"] {
+    font-weight: 600;
+    color: #fff;
+    background-color: #1375bc;
+    border: 1px solid #1375bc;
+    cursor: pointer;
+}
+
+#join-email-popup input[type="submit"]:hover {
+    color: #1375bc;
+    background-color: #fcea68;
+}
+/* END Join Email Popup */
+</style>
+
 <!-- USE MY NEW VERSION INSTEAD OF BELOW -->
 <!-- OLD Promo Function -->
 <script src="/css/epiphany3/scripts/email.min.js"></script>

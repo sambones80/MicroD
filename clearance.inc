@@ -20,7 +20,7 @@ Updated that I created for Noah's
 <!--TEMPLATE-->
 		<!-- <div class="grid-50 tablet-grid-50 clearanceitemsection">
 			<div class="clearanceitemimg">
-				<img src="/css/XXXX/images/clearanceitems/" width="237" height="199" alt="Clearance Item" />
+				<img src="/css/20495/images/clearanceitems/" width="237" height="199" alt="Clearance Item" />
 				<h2>SOLD</h2>
 			</div>
 			<div class="clearanceitemtext">
@@ -31,7 +31,7 @@ Updated that I created for Noah's
 		</div>
 		<div class="grid-50 tablet-grid-50 clearanceitemsection">
 			<div class="clearanceitemimg">
-				<img src="/css/XXXX/images/clearanceitems/" width="237" height="199" alt="Clearance Item" />
+				<img src="/css/20495/images/clearanceitems/" width="237" height="199" alt="Clearance Item" />
 				<h2>SOLD</h2>
 			</div>
 			<div class="clearanceitemtext">
@@ -43,7 +43,7 @@ Updated that I created for Noah's
 
 		<div class="grid-50 tablet-grid-50 clearanceitemsection">
 			<div class="clearanceitemimg">
-				<img src="/css/XXXX/images/clearance-items/EmptyHomeBanner-237x199.jpg" width="237" height="199" alt="Clearance Item" />
+				<img src="/css/20495/images/clearance-items/EmptyHomeBanner-237x199.jpg" width="237" height="199" alt="Clearance Item" />
 				<!-- <span>SOLD!</span> -->
 			</div>
 			<div class="clearanceitemtext">
@@ -54,7 +54,7 @@ Updated that I created for Noah's
 		</div>
 		<div class="grid-50 tablet-grid-50 clearanceitemsection">
 			<div class="clearanceitemimg">
-				<img src="/css/XXXX/images/clearance-items/EmptyHomeBanner-237x199.jpg" width="237" height="199" alt="Clearance Item" />
+				<img src="/css/20495/images/clearance-items/EmptyHomeBanner-237x199.jpg" width="237" height="199" alt="Clearance Item" />
 				<span>SOLD!</span>
 			</div>
 			<div class="clearanceitemtext">

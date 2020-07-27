@@ -16,28 +16,28 @@ Updated that I created for Noah's
 		</div>
 		<div class="popup-gallery">
 			<div class="grid-25 tablet-grid-50 mobile-grid-100">
-				<a href="/css/XXXX/images/EmptyHomeBanner.jpg" title="Placeholder"><img src="/css/XXXX/images/EmptyHomeBanner-600x400.jpg" width="280" alt="Placeholder"></a>
+				<a href="/css/20495/images/EmptyHomeBanner.jpg" title="Placeholder"><img src="/css/20495/images/EmptyHomeBanner-600x400.jpg" width="280" alt="Placeholder"></a>
 			</div>
 			<div class="grid-25 tablet-grid-50 mobile-grid-100">
-				<a href="/css/XXXX/images/EmptyHomeBanner.jpg" title="Placeholder"><img src="/css/XXXX/images/EmptyHomeBanner-600x400.jpg" width="280" alt="Placeholder"></a>
+				<a href="/css/20495/images/EmptyHomeBanner.jpg" title="Placeholder"><img src="/css/20495/images/EmptyHomeBanner-600x400.jpg" width="280" alt="Placeholder"></a>
 			</div>
 			<div class="grid-25 tablet-grid-50 mobile-grid-100">
-				<a href="/css/XXXX/images/EmptyHomeBanner.jpg" title="Placeholder"><img src="/css/XXXX/images/EmptyHomeBanner-600x400.jpg" width="280" alt="Placeholder"></a>
+				<a href="/css/20495/images/EmptyHomeBanner.jpg" title="Placeholder"><img src="/css/20495/images/EmptyHomeBanner-600x400.jpg" width="280" alt="Placeholder"></a>
 			</div>
 			<div class="grid-25 tablet-grid-50 mobile-grid-100">
-				<a href="/css/XXXX/images/EmptyHomeBanner.jpg" title="Placeholder"><img src="/css/XXXX/images/EmptyHomeBanner-600x400.jpg" width="280" alt="Placeholder"></a>
+				<a href="/css/20495/images/EmptyHomeBanner.jpg" title="Placeholder"><img src="/css/20495/images/EmptyHomeBanner-600x400.jpg" width="280" alt="Placeholder"></a>
 			</div>
 			<div class="grid-25 tablet-grid-50 mobile-grid-100">
-				<a href="/css/XXXX/images/EmptyHomeBanner.jpg" title="Placeholder"><img src="/css/XXXX/images/EmptyHomeBanner-600x400.jpg" width="280" alt="Placeholder"></a>
+				<a href="/css/20495/images/EmptyHomeBanner.jpg" title="Placeholder"><img src="/css/20495/images/EmptyHomeBanner-600x400.jpg" width="280" alt="Placeholder"></a>
 			</div>
 			<div class="grid-25 tablet-grid-50 mobile-grid-100">
-				<a href="/css/XXXX/images/EmptyHomeBanner.jpg" title="Placeholder"><img src="/css/XXXX/images/EmptyHomeBanner-600x400.jpg" width="280" alt="Placeholder"></a>
+				<a href="/css/20495/images/EmptyHomeBanner.jpg" title="Placeholder"><img src="/css/20495/images/EmptyHomeBanner-600x400.jpg" width="280" alt="Placeholder"></a>
 			</div>
 			<div class="grid-25 tablet-grid-50 mobile-grid-100">
-				<a href="/css/XXXX/images/EmptyHomeBanner.jpg" title="Placeholder"><img src="/css/XXXX/images/EmptyHomeBanner-600x400.jpg" width="280" alt="Placeholder"></a>
+				<a href="/css/20495/images/EmptyHomeBanner.jpg" title="Placeholder"><img src="/css/20495/images/EmptyHomeBanner-600x400.jpg" width="280" alt="Placeholder"></a>
 			</div>
 			<div class="grid-25 tablet-grid-50 mobile-grid-100">
-				<a href="/css/XXXX/images/EmptyHomeBanner.jpg" title="Placeholder"><img src="/css/XXXX/images/EmptyHomeBanner-600x400.jpg" width="280" alt="Placeholder"></a>
+				<a href="/css/20495/images/EmptyHomeBanner.jpg" title="Placeholder"><img src="/css/20495/images/EmptyHomeBanner-600x400.jpg" width="280" alt="Placeholder"></a>
 			</div>
 			<div class="clear"></div>
 		</div>

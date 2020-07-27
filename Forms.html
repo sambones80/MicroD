@@ -67,6 +67,33 @@ Multiple email address notifications based on location (or any input)
 </select>
 
 
+Select List Color Styling
+<style>
+select {
+    color: #757575;
+}
+
+select option {
+    color: #000;
+}
+
+select option:first-child {
+    display: none;
+}
+</style>
+<script>
+$('select').each(function() {
+    $(this).change(function() {
+        if ($(this).val() == "") {
+            $(this).css('color', '#666');
+        } else {
+            $(this).css('color', '#000');
+        }
+    });
+});
+</script>
+
+
 Check form after resetting the cache and in incognito mode.
 <!-- Contact Us -->
 
